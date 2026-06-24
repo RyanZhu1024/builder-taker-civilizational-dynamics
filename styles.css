@@ -258,6 +258,7 @@ h3 {
 .logic-band,
 .timeline-band,
 .anti-blackbox,
+.culture-band,
 .musk-egg,
 .fork-band,
 .formula-band,
@@ -470,6 +471,72 @@ h3 {
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(236, 231, 220, 0.9)),
     repeating-linear-gradient(90deg, rgba(23, 23, 23, 0.07) 0 1px, transparent 1px 56px);
+}
+
+.culture-band {
+  background:
+    linear-gradient(180deg, rgba(248, 246, 240, 0.94), rgba(255, 255, 255, 0.96)),
+    repeating-linear-gradient(0deg, rgba(23, 23, 23, 0.055) 0 1px, transparent 1px 64px);
+}
+
+.culture-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 44px 0 28px;
+}
+
+.culture-grid article {
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: var(--shadow-soft);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.culture-grid article:first-child {
+  border-top: 6px solid var(--builder);
+}
+
+.culture-grid article:last-child {
+  border-top: 6px solid var(--rent);
+}
+
+.culture-grid article:hover {
+  border-color: rgba(183, 121, 31, 0.38);
+  box-shadow: var(--shadow-lift);
+  transform: translateY(-4px);
+}
+
+.culture-grid h3,
+.culture-grid p {
+  margin: 0;
+}
+
+.culture-label {
+  color: var(--gold);
+  font-size: 0.82rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.culture-grid p:not(.culture-label) {
+  color: var(--muted);
+}
+
+.culture-note {
+  max-width: none !important;
+  padding: 20px 22px;
+  border-left: 4px solid var(--gold);
+  background: rgba(255, 255, 255, 0.76);
+  color: #333841 !important;
+  box-shadow: var(--shadow-soft);
+  font-weight: 720;
 }
 
 .blackbox-flow {
@@ -996,6 +1063,7 @@ h3 {
   .logic-band,
   .timeline-band,
   .anti-blackbox,
+  .culture-band,
   .musk-egg,
   .fork-band,
   .formula-band,
@@ -1023,6 +1091,7 @@ h3 {
   }
 
   .blackbox-flow,
+  .culture-grid,
   .empire-stack,
   .valuation-ladder,
   .branch-grid {
