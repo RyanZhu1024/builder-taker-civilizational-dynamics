@@ -255,6 +255,7 @@ h3 {
 .logic-band,
 .timeline-band,
 .anti-blackbox,
+.musk-egg,
 .fork-band,
 .formula-band,
 .archive-band,
@@ -430,6 +431,63 @@ h3 {
 
 .fork-band {
   background: #f3efe6;
+}
+
+.musk-egg {
+  background:
+    linear-gradient(135deg, rgba(18, 18, 18, 0.96), rgba(38, 48, 60, 0.94)),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.08) 0 1px, transparent 1px 72px);
+  color: #fff;
+}
+
+.musk-egg .section-inner > p {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.empire-stack {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin: 38px 0 28px;
+}
+
+.empire-stack article {
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.075);
+}
+
+.empire-stack span {
+  width: fit-content;
+  padding: 4px 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  color: #f2c36b;
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
+.empire-stack h3,
+.empire-stack p {
+  margin: 0;
+}
+
+.empire-stack p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.egg-warning {
+  max-width: none !important;
+  padding: 18px 20px;
+  border-left: 4px solid #f2c36b;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff !important;
+  font-weight: 760;
 }
 
 .branch-grid {
@@ -737,6 +795,7 @@ h3 {
   .logic-band,
   .timeline-band,
   .anti-blackbox,
+  .musk-egg,
   .fork-band,
   .formula-band,
   .archive-band,
@@ -753,6 +812,7 @@ h3 {
   }
 
   .blackbox-flow,
+  .empire-stack,
   .branch-grid {
     grid-template-columns: 1fr;
   }
