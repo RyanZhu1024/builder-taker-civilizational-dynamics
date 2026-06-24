@@ -481,6 +481,36 @@ h3 {
   color: rgba(255, 255, 255, 0.7);
 }
 
+.valuation-ladder {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin: 0 0 28px;
+}
+
+.valuation-ladder div {
+  min-height: 132px;
+  padding: 18px;
+  border: 1px solid rgba(242, 195, 107, 0.28);
+  border-radius: 8px;
+  background: rgba(242, 195, 107, 0.09);
+}
+
+.valuation-ladder span {
+  display: block;
+  margin-bottom: 10px;
+  color: #f2c36b;
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  font-weight: 950;
+  line-height: 1;
+}
+
+.valuation-ladder p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.95rem;
+}
+
 .egg-warning {
   max-width: none !important;
   padding: 18px 20px;
@@ -813,6 +843,7 @@ h3 {
 
   .blackbox-flow,
   .empire-stack,
+  .valuation-ladder,
   .branch-grid {
     grid-template-columns: 1fr;
   }
