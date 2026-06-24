@@ -1,236 +1,236 @@
-# Builder vs Taker: A Civilizational Dynamics Framework
+# 建造者与攫取者：文明动力学框架
 
-## One-Sentence Core
+## 一句话核心
 
-Human civilization can be understood as a recurring struggle between Builders, who open new frontiers and create new surplus, and Takers, who capture that surplus by controlling gates and turning productive systems into rent structures.
+人类文明可以被理解为建造者与攫取者之间反复出现的斗争：建造者打开新边疆并创造新增剩余，攫取者控制入口并把生产系统转化为地租结构。
 
-## Core Thesis
+## 核心命题
 
-Civilization is not a static moral order. It is a flow of energy, capability, coordination, and surplus.
+文明不是静态的道德秩序。文明是一种能量、能力、组织和剩余的流动。
 
-The central question is not who claims to represent justice. The central question is:
+真正关键的问题不是谁声称自己代表正义，而是：
 
-- Who creates new capacity?
-- Who controls access to that capacity?
-- Who captures the surplus?
-- Who opens the next frontier?
-- Who turns the frontier into rent?
+- 谁创造了新增能力？
+- 谁控制了通往能力的入口？
+- 谁捕获了文明剩余？
+- 谁打开了下一个边疆？
+- 谁又把新边疆变成了新地租？
 
-Builders expand civilization. Takers capture civilization.
+建造者扩张文明。攫取者捕获文明。
 
-## Definitions
+## 基本定义
 
-**Builder**
+**建造者**
 
-A Builder creates new surplus by building technology, infrastructure, institutions, markets, science, cities, production systems, energy systems, or new frontiers. Builders turn disorder into capability and resources into productive capacity.
+建造者通过建设技术、基础设施、制度、市场、科学、城市、生产系统、能源系统和新边疆来创造新增剩余。他们把混乱转化为能力，把资源转化为生产力。
 
-**Taker**
+**攫取者**
 
-A Taker captures surplus by controlling gates: land, licenses, budgets, narratives, finance, regulation, institutions, platforms, data, energy, compute, or military authority. Takers convert civilization's productive surplus into rent.
+攫取者通过控制入口来捕获剩余。这些入口可以是土地、许可、预算、叙事、金融、监管、机构、平台、数据、能源、算力或军事权力。攫取者把文明的生产性剩余转化为地租。
 
-**Surplus**
+**剩余**
 
-Surplus is the extra capacity a civilization creates beyond bare survival: food, energy, capital, time, knowledge, security, mobility, computational power, institutional capacity, and strategic optionality.
+剩余是文明超出生存底线之后创造出来的额外能力，包括粮食、能源、资本、时间、知识、安全、流动性、计算能力、制度能力和战略选择空间。
 
-**Rent**
+**地租**
 
-Rent is surplus captured through control rather than creation. It appears as monopoly profit, bureaucratic permission, inherited privilege, regulatory capture, ideological gatekeeping, platform lock-in, or forced dependency.
+地租是通过控制而不是创造获得的剩余。它表现为垄断利润、官僚许可、继承特权、监管俘获、意识形态守门、平台锁定和强制依赖。
 
-## The Civilizational Cycle
+## 文明周期
 
-1. A new frontier appears.
-2. Builders create new surplus.
-3. Takers capture the surplus.
-4. Institutions harden around the captured surplus.
-5. Society becomes compressed and less creative.
-6. Crisis exposes the old rent structure.
-7. New Builders open a new frontier.
-8. The cycle begins again.
+1. 新边疆出现。
+2. 建造者创造新增剩余。
+3. 攫取者捕获文明剩余。
+4. 制度围绕被捕获的剩余硬化。
+5. 社会变得压抑、僵化、低创造力。
+6. 危机暴露旧地租结构。
+7. 新建造者打开新的边疆。
+8. 周期重新开始。
 
-Builders and Takers are not fixed moral tribes. Builders can become Takers after success. That is one of history's central patterns.
+建造者和攫取者不是固定的道德族群。建造者成功之后也可能变成攫取者。这正是历史最重要的循环之一。
 
-## Revolution As Builder-Taker Reallocation
+## 革命作为建造者与攫取者的重新分配
 
-Modern revolutions are not simply battles between good and evil. They are often moments when old rent structures are challenged by new forms of organization, technology, legitimacy, and production.
+现代革命并不只是善恶斗争。很多革命其实是旧地租结构被新的组织方式、技术能力、合法性叙事和生产方式挑战。
 
-A good revolution expands Builder access.
+好的革命扩大建造者入口。
 
-A bad revolution merely replaces one class of Takers with another.
+坏的革命只是换一批攫取者。
 
-The test is practical: do ordinary people, entrepreneurs, scientists, engineers, local communities, and independent institutions gain more room to build?
+判断标准很实际：普通人、创业者、科学家、工程师、地方社会和独立机构，是否获得了更多建设空间？
 
-## Asset Revaluation
+## 资产重估
 
-Every major Builder wave revalues assets.
+每一次大的建造者浪潮都会重估资产。
 
-Old rent assets include land, hereditary titles, colonial charters, old media, old energy systems, bureaucratic approvals, legacy financial access, and institutional prestige.
+旧地租资产包括土地、爵位、殖民特许、旧媒体、旧能源系统、官僚审批、传统金融入口和制度声望。
 
-New frontier assets include factories, railways, electricity, oil, software, chips, compute, AI models, robotics, energy storage, launch capacity, orbital infrastructure, and data centers.
+新边疆资产包括工厂、铁路、电力、石油、软件、芯片、算力、人工智能模型、机器人、储能、发射能力、轨道基础设施和数据中心。
 
-Civilizational transition is therefore also an asset transition.
+文明转型因此也是资产转型。
 
-## The Transnational Elite System As Advanced Taker Network
+## 跨国精英系统作为高级攫取网络
 
-The transnational elite system should not be understood as a single secret command center. It is better understood as a networked governance class: foundations, universities, think tanks, media institutions, international organizations, NGOs, law firms, consulting firms, financial institutions, technology platforms, and professional credentialing systems.
+跨国精英系统不应被理解为一个单一的秘密指挥中心。更准确地说，它是一种网络化治理阶层：基金会、大学、智库、媒体机构、国际组织、非政府组织、律所、咨询公司、金融机构、科技平台和职业认证系统共同构成了它。
 
-Its power is not primarily direct command. Its power is access control.
+它的权力主要不是直接命令，而是入口控制。
 
-It controls:
+它控制：
 
-- educational pathways;
-- foundation funding;
-- media legitimacy;
-- policy language;
-- NGO ecosystems;
-- international organization careers;
-- legal and administrative norms;
-- platform rules;
-- capital market standards;
-- reputational rewards and punishments.
+- 教育路径；
+- 基金会资金；
+- 媒体合法性；
+- 政策语言；
+- 非政府组织生态；
+- 国际组织职业通道；
+- 法律与行政规范；
+- 平台规则；
+- 资本市场标准；
+- 声誉奖励与惩罚。
 
-Its deepest power is the power to define what counts as civilized, professional, open, inclusive, democratic, modern, and legitimate.
+它最深层的权力，是定义什么叫文明、专业、开放、包容、民主、现代和合法。
 
-Once it controls legitimacy, politicians, professors, journalists, judges, executives, and NGO leaders adapt themselves voluntarily.
+一旦它控制了合法性，政客、教授、记者、法官、企业高管和非政府组织领袖就会主动适配。
 
-This is a high-order Taker mechanism: not merely extracting rent, but defining the moral and institutional language through which rent extraction becomes respectable.
+这是一种高级攫取机制：它不只是抽取地租，而是定义一种道德和制度语言，让地租抽取变得体面。
 
-## The American Arc
+## 美国弧线
 
-America's early strength came from open Builder entry:
+美国早期的力量来自开放的建造者入口：
 
-- geographic frontier;
-- private property;
-- local self-government;
-- immigration;
-- universities;
-- capital markets;
-- industrial experimentation;
-- technological risk-taking;
-- public argument;
-- regional competition.
+- 地理边疆；
+- 私有产权；
+- 地方自治；
+- 移民；
+- 大学；
+- 资本市场；
+- 工业实验；
+- 技术冒险；
+- 公开争论；
+- 地区竞争。
 
-In the twentieth century, an elite governance system emerged around foundations, universities, think tanks, foreign policy circles, finance, media, international law, and international organizations.
+二十世纪，美国围绕基金会、大学、智库、外交圈、金融、媒体、国际法和国际组织形成了一套精英治理系统。
 
-During the Second World War and the Cold War, this system fused with the American state. It helped build the postwar order: the United Nations, Bretton Woods, NATO, the World Bank, the IMF, reconstruction, and the anti-Soviet alliance system.
+第二次世界大战和冷战期间，这套系统与美国国家机器融合。它帮助建立了战后秩序：联合国、布雷顿森林体系、北约、世界银行、国际货币基金组织、战后重建和反苏联盟体系。
 
-During the Cold War, the system still had an external constraint: it had to help America win.
+冷战时期，这套系统仍然有一个外部约束：它必须帮助美国赢。
 
-After 1991, the Soviet Union disappeared. The external constraint disappeared with it.
+1991 年之后，苏联消失了。外部约束也随之消失。
 
-The system misread Cold War victory as proof that globalization, expert governance, open borders, financialization, liberal institutionalism, and social engineering were historical inevitabilities.
+这套系统把冷战胜利误读为：全球化、专家治理、开放边界、金融化、自由主义制度和社会工程是历史必然。
 
-The result was a reversal:
+结果发生了反转：
 
-> The system moved from serving American power to redesigning American society.
+> 这套系统从服务美国力量，转向重新设计美国社会。
 
-America became both the engine and the experimental object.
+美国既成了发动机，也成了实验对象。
 
-## Post-Cold War Blowback
+## 冷战后的反噬
 
-After the Cold War, the transnational elite system increasingly treated the United States less as a bounded republic and more as a global governance platform.
+冷战后，跨国精英系统越来越少把美国视为一个有边界的共和国，越来越多把美国视为一个全球治理平台。
 
-This created several structural effects:
+这制造了几种结构性后果：
 
-- manufacturing offshoring weakened the industrial working class;
-- financialization rewarded asset holders over producers;
-- open-border ideology weakened national cohesion;
-- NGO and legal networks converted migration into a rights-and-management regime;
-- identity politics fragmented common citizenship;
-- university and media systems turned elite consensus into moral legitimacy;
-- administrative agencies, courts, platforms, and foundations displaced direct democratic authorization.
+- 制造业外包削弱了产业工人阶层；
+- 金融化奖励资产持有者而不是生产者；
+- 开放边界意识形态削弱了国家凝聚力；
+- 非政府组织和法律网络把移民问题转化为权利与管理体系；
+- 身份政治撕裂了共同公民身份；
+- 大学和媒体系统把精英共识转化为道德合法性；
+- 行政机构、法院、平台和基金会替代了直接民主授权。
 
-The cost fell disproportionately on ordinary citizens and local communities.
+成本主要落在普通公民和地方社区身上。
 
-The benefits accrued to mobile capital, elite universities, foundations, media institutions, consulting firms, global NGOs, technology platforms, and the professional-managerial class.
+收益则流向流动资本、精英大学、基金会、媒体机构、咨询公司、全球非政府组织、科技平台和职业管理阶层。
 
-This is why contemporary American conflict is not only left versus right. It is also:
+所以今天的美国冲突不只是左派与右派，也可以理解为：
 
-> National America versus Platform America.
+> 民族国家美国 vs 平台帝国美国。
 
-National America cares about borders, industry, citizens, constitutional order, communities, families, public safety, energy, and local society.
+民族国家美国关心边境、产业、公民、宪政秩序、社区、家庭、公共安全、能源和地方社会。
 
-Platform America cares about dollar hegemony, global capital, international organizations, elite universities, technology platforms, NGOs, reputation systems, and global rule-setting.
+平台帝国美国关心美元霸权、全球资本、国际组织、精英大学、科技平台、非政府组织、声誉系统和全球规则制定权。
 
-The transnational system depends on American power while often treating the American people as an obstacle to be managed.
+跨国系统依赖美国力量，却经常把美国人民视为需要被管理的障碍。
 
-## The New Frontier
+## 新边疆
 
-Today the new frontier is not only digital. It is material, energetic, computational, and orbital.
+今天的新边疆不只是数字化。它同时是物质的、能源的、计算的、自动化的和轨道的。
 
-The key frontier domains are:
+关键边疆包括：
 
-- artificial intelligence;
-- low-cost compute;
-- low-cost energy;
-- robotics;
-- automated manufacturing;
-- chips;
-- data centers;
-- orbital launch;
-- space infrastructure.
+- 人工智能；
+- 低成本算力；
+- 低成本能源；
+- 机器人；
+- 自动化制造；
+- 芯片；
+- 数据中心；
+- 轨道发射；
+- 太空基础设施。
 
-This is not a normal technology cycle. It is a rewrite of the civilizational production function.
+这不是普通技术周期，而是文明生产函数的重写。
 
-Whoever controls cheap compute, cheap energy, automation, and orbital logistics controls the next phase of expansion.
+谁控制低成本算力、低成本能源、自动化和轨道物流，谁就控制下一阶段文明扩张的入口。
 
-## The AI Test
+## 人工智能测试
 
-The core question is not whether AI becomes powerful.
+核心问题不是人工智能会不会变强。
 
-The core question is:
+核心问题是：
 
-> Will AI serve Builders or Takers?
+> 人工智能会服务建造者，还是服务攫取者？
 
-If AI serves Builders, it lowers the cost of creation. Individuals, small firms, scientists, engineers, local industries, and independent institutions gain new capability.
+如果人工智能服务建造者，它会降低创造成本，让个人、小公司、科学家、工程师、地方产业和独立机构获得新能力。
 
-If AI serves Takers, it strengthens surveillance, censorship, bureaucratic prediction, platform monopoly, financial extraction, institutional propaganda, and social management.
+如果人工智能服务攫取者，它会强化监控、审查、官僚预测、平台垄断、金融抽取、制度宣传和社会管理。
 
-AI can produce a Star Trek trajectory or a more efficient stagnation machine.
+人工智能可能带来星际迷航式的扩张路径，也可能带来一个更高效的停滞机器。
 
-## America And China
+## 美国与中国
 
-America's advantage is messy openness. It still has venture capital, startups, universities, open-source communities, immigration, public argument, local competition, AI labs, SpaceX, energy innovation, and private experimentation.
+美国的优势是混乱中的开放性。它仍然拥有风险资本、创业公司、大学、开源社区、移民、公开争论、地方竞争、人工智能实验室、SpaceX、能源创新和私人实验。
 
-America's risk is that new Builders become new gatekeepers: AI giants, cloud platforms, chip firms, data-center operators, launch providers, and government contractors could become the next rent owners.
+美国的风险是新的建造者变成新的守门人：人工智能巨头、云平台、芯片公司、数据中心运营商、发射服务商和政府承包商，都可能成为下一轮地租拥有者。
 
-China's advantage is engineering deployment: manufacturing, supply chains, batteries, EVs, solar, robotics, hardware integration, and industrial AI.
+中国的优势是工程部署能力：制造业、供应链、电池、电动车、太阳能、机器人、硬件整合和工业人工智能。
 
-China's risk is that AI is absorbed into security logic. If AI is primarily used for censorship, monitoring, stability maintenance, prediction, and control, it may improve the state's ability to manage decline without increasing society's ability to create the future.
+中国的风险是人工智能被安全逻辑吸收。如果人工智能主要用于审查、监控、维稳、预测和控制，它也许能提高国家管理衰退的能力，却不能提高社会创造未来的能力。
 
-The decisive competition is not democracy versus autocracy in slogan form.
+决定性的竞争不是口号式的民主 vs 专制。
 
-The decisive competition is:
+决定性的竞争是：
 
-> Which system lets more Builders gain real entry?
+> 哪个系统能让更多建造者获得真实入口？
 
-## War As Ultimate Taker
+## 战争作为终极攫取者
 
-War is the ultimate Taker mechanism because it consumes future surplus directly.
+战争是终极攫取机制，因为战争直接消耗未来剩余。
 
-It hands society to emergency authority, military bureaucracy, security logic, censorship, state contracts, and destruction.
+战争把社会交给紧急权力、军事官僚、安全逻辑、审查、国家合同和毁灭。
 
-AI, robotics, energy, and space could produce a civilizational leap, but only if major war does not interrupt the transition.
+人工智能、机器人、能源和太空可能带来文明跃迁，但前提是大规模战争没有打断这个过程。
 
-Avoiding escalation in Taiwan, Ukraine, and the Middle East is therefore not merely a moral preference. It is a strategic requirement for preserving the next frontier.
+避免台海、乌克兰和中东升级，不只是道德偏好，而是保护下一轮边疆的战略要求。
 
-## Final Standard
+## 最终标准
 
-The final standard is simple:
+最终标准很简单：
 
-> The system that gives the most Builders real access to new frontiers is the system most likely to lead human civilization.
+> 哪个系统能让最多建造者真实进入新边疆，哪个系统就最可能引领人类文明。
 
-If new technology becomes an open civilization platform, humanity may move toward expansion.
+如果新技术成为开放文明平台，人类可能走向扩张。
 
-If new technology is captured by states, corporations, bureaucracies, platforms, or security systems, humanity will receive a more efficient and more silent decline.
+如果新技术被国家、公司、官僚体系、平台或安全机器捕获，人类得到的将是一个更高效、更安静的衰退系统。
 
-## Final Formulation
+## 最终表述
 
-The main line of civilization is not left versus right, nor class conflict alone, nor national conflict alone. It is the recurring struggle between surplus creation and surplus capture.
+文明的主线不是左派 vs 右派，也不只是阶级斗争或国家斗争。文明的主线，是剩余创造与剩余捕获之间反复出现的斗争。
 
-America's greatness came from open Builder entry.
+美国的伟大来自开放的建造者入口。
 
-America's current decline comes from the post-Cold War backlash of a transnational Taker system that once served American power but later began to redesign America itself.
+美国今天的衰落，来自冷战后跨国攫取系统的反噬：它曾经服务美国力量，后来开始重新设计美国本身。
 
-AI, energy, robotics, and space are opening the next frontier. But that frontier will also be contested.
+人工智能、能源、机器人和太空正在打开下一轮边疆。但这轮边疆同样会被争夺。
 
-The future belongs to the system that restrains Takers, releases Builders, and avoids allowing war to devour the surplus needed for civilizational renewal.
+未来属于那个能限制攫取者、释放建造者，并避免战争吞噬文明更新所需剩余的系统。

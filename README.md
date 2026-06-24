@@ -1,44 +1,44 @@
-# Builder-Taker Civilizational Dynamics
+# 建造者-攫取者文明动力学
 
-This repository preserves and presents a working theory of civilizational change:
+这个仓库用于保存和展示一套关于文明变化的工作框架：
 
-> Builders create new surplus by opening frontiers. Takers capture surplus by controlling gates. Civilizational renewal depends on whether new Builders can break old rent structures without becoming the next gatekeepers.
+> 建造者通过打开新边疆创造新增剩余；攫取者通过控制入口捕获剩余。文明能否更新，取决于新的建造者能否打破旧地租结构，以及他们成功之后能否避免自己变成新的守门人。
 
-## Files
+## 文件结构
 
-- `index.html` - GitHub Pages-ready archive index.
-- `articles/` - individual article pages linked from the index.
-- `docs/framework.md` - canonical Markdown source document.
-- `styles.css` - page styling.
-- `scripts/publish-github-pages.sh` - optional helper to create a GitHub repo, push this project, and enable GitHub Pages.
+- `index.html`：GitHub Pages 首页目录索引。
+- `articles/`：每篇主题文章的独立页面。
+- `docs/framework.md`：理论框架的 Markdown 源文档。
+- `styles.css`：网站样式。
+- `scripts/publish-github-pages.sh`：创建 GitHub 仓库、推送项目、开启 GitHub Pages 的辅助脚本。
 
-## Publish With GitHub Pages
+## 发布到 GitHub Pages
 
-1. Install and authenticate GitHub CLI:
+1. 安装并登录 GitHub CLI：
 
    ```bash
    gh auth login
    ```
 
-2. From this directory, run:
+2. 在本目录运行：
 
    ```bash
    ./scripts/publish-github-pages.sh YOUR_GITHUB_USERNAME builder-taker-civilizational-dynamics public
    ```
 
-   GitHub Pages is available for public repositories on GitHub Free. Use `private` only if your GitHub plan supports Pages for private repositories.
+   GitHub 免费账号支持公开仓库的 GitHub Pages。如果要用私有仓库发布 Pages，需要确认你的 GitHub 计划支持。
 
-3. The site will be available at:
+3. 发布后网站地址会是：
 
    ```text
    https://YOUR_GITHUB_USERNAME.github.io/builder-taker-civilizational-dynamics/
    ```
 
-## Preservation Strategy
+## 保存策略
 
-- Keep `docs/framework.md` as the source of truth.
-- Add future Markdown sources under `docs/`, then add matching article pages under `articles/`.
-- Update the article card list in `index.html` whenever a new theme becomes publishable.
-- Commit every major revision.
-- Use GitHub as the version history.
-- Export important versions to PDF when the argument stabilizes.
+- 把 `docs/framework.md` 作为长期源文档。
+- 未来新主题先放到 `docs/`，再在 `articles/` 下生成对应文章页。
+- 每次有新文章时，更新 `index.html` 的目录卡片。
+- 每次重要修订都提交 Git。
+- 用 GitHub 保存完整版本历史。
+- 当论证成熟后，可以导出 PDF 作为阶段性快照。
