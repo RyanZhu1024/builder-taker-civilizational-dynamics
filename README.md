@@ -25,7 +25,7 @@ This repository preserves and presents a working theory of civilizational change
    ./scripts/publish-github-pages.sh YOUR_GITHUB_USERNAME builder-taker-civilizational-dynamics public
    ```
 
-   Use `private` instead of `public` if you want to keep the repository private.
+   GitHub Pages is available for public repositories on GitHub Free. Use `private` only if your GitHub plan supports Pages for private repositories.
 
 3. The site will be available at:
 

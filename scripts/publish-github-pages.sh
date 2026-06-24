@@ -3,7 +3,7 @@ set -euo pipefail
 
 OWNER="${1:-}"
 REPO="${2:-builder-taker-civilizational-dynamics}"
-VISIBILITY="${3:-private}"
+VISIBILITY="${3:-public}"
 
 if [[ -z "$OWNER" ]]; then
   echo "Usage: $0 GITHUB_USERNAME [REPO_NAME] [public|private]"
