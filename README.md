@@ -6,7 +6,8 @@ This repository preserves and presents a working theory of civilizational change
 
 ## Files
 
-- `index.html` - GitHub Pages-ready landing page.
+- `index.html` - GitHub Pages-ready archive index.
+- `articles/` - individual article pages linked from the index.
 - `docs/framework.md` - canonical Markdown source document.
 - `styles.css` - page styling.
 - `scripts/publish-github-pages.sh` - optional helper to create a GitHub repo, push this project, and enable GitHub Pages.
@@ -36,6 +37,8 @@ This repository preserves and presents a working theory of civilizational change
 ## Preservation Strategy
 
 - Keep `docs/framework.md` as the source of truth.
+- Add future Markdown sources under `docs/`, then add matching article pages under `articles/`.
+- Update the article card list in `index.html` whenever a new theme becomes publishable.
 - Commit every major revision.
 - Use GitHub as the version history.
 - Export important versions to PDF when the argument stabilizes.
