@@ -765,24 +765,46 @@ Musk Civilization Group 成型 = 50T-100T
 
 一个框架如果永远不能被推翻，就更像叙事而不是理论。因此，本文至少给出几类可观察的反例。
 
-如果出现一个长期由强守门、高地租、低透明度系统主导的文明，但它仍然持续降低能源、算力、制造、住房、教育、创业和太空进入成本，并持续打开新边疆，那么本文的核心因果链会被削弱。
+为了避免“长期”“持续”变成事后伸缩词，这里先给出一个粗略但可预先承诺的观察窗口。它不是精密计量模型，而是把框架从叙事检验推进到数据检验。
 
-如果一个社会拥有大量开放入口、低地租、高透明度、强审计机制，却长期无法产生技术突破、生产率提升和新边疆扩张，那么“开放入口足以放大建造者”的假设会被削弱。
+| 检验曲线 | 代理指标 | 观察窗口 | 会削弱框架的方向 |
+| --- | --- | --- | --- |
+| 进入成本曲线 | 发射成本美元 / kg、建厂审批到投产周期、创业到部署周期、并网时间、训练 / 推理算力成本 | 滚动 10 年；技术周期很短的领域可用 5 年 | 一个强守门、高地租、低透明度系统中，多个关键进入成本连续下降 30% 以上，同时新进入者数量上升 |
+| 生产率与能源可得性曲线 | 全要素生产率、人均可调度能源、人均电力消费、单位能源成本、单位算力成本 | 滚动 10 年；能源基础设施用 15 年 | 一个低地租、高开放、高透明系统中，TFP 和人均可调度能源长期停滞或下降，且没有战争、灾害、人口冲击等外生解释 |
+| 地租占剩余比例 | 土地租金、垄断利润、监管套利、金融手续费、许可溢价、平台抽成、住房 / 教育 / 医疗 / 能源占可支配收入比例 | 滚动 10 年 | 地租份额上升，但进入成本下降、生产率上升、新建造者进入率上升，说明某些“地租”可能其实是协调价值或风险定价 |
+| 系统可审计性与新建造者进入率 | 新企业进入率、独立开发者 / 开源项目活跃度、公共流程可审计组件占比、行政 / 平台 / 选举争议可复核率 | 滚动 5-10 年 | 低可审计、低开源、强中心化系统长期比高可审计系统产生更多新进入者、更低进入成本和更高公共合法性 |
 
-如果某些高度复杂、不可完全公开的系统，长期比开源、模块化、可审计系统更能维持可信度、创新速度和公共合法性，那么反黑箱工程需要重新限定适用范围。
+更直白地说，本文会被这几类观察削弱：
 
-如果一个成功的建造者在成为守门人之后，仍然长期保持低进入成本、高竞争性、强开放性和高创新速度，那么“建造者必然漂移为攫取者”的强版本会被削弱。
+1. 强守门、高地租系统持续打开新边疆；
+2. 开放入口、低地租系统长期不能生成新能力；
+3. 高复杂、低透明系统长期比模块化、可审计系统更可信、更有创新力；
+4. 成功建造者成为守门人后，仍长期保持低进入成本、高竞争性和高开放性。
 
-因此，本框架最应该被数据检验的不是口号，而是四组曲线：
+这些阈值可以继续迭代，但方向必须提前写下。否则框架就会滑回“事后总能解释”的叙事工具。
 
-```text
-进入成本曲线
-生产率与能源可得性曲线
-地租占剩余比例
-系统可审计性与新建造者进入率
-```
+## 参考与延伸阅读
 
-如果这些曲线长期不支持本文的方向，框架就必须修改。
+这些书和论文不是本文的脚注装饰，而是框架背后的理论坐标。本文没有逐条复述它们，而是把它们压缩成“剩余、入口、地租、复杂性、反馈、可审计性”这套工作语言。
+
+### 能量、剩余与社会发展
+
+- Vaclav Smil, *Energy and Civilization: A History*, MIT Press, 2017.
+- Charles A. S. Hall and collaborators on EROI / EROEI, especially D. J. Murphy and C. A. S. Hall, “Year in review: EROI or energy return on (energy) invested,” *Annals of the New York Academy of Sciences*, 2010.
+- Ian Morris, *Why the West Rules—for Now: The Patterns of History, and What They Reveal About the Future*, Farrar, Straus and Giroux, 2010.
+- Ian Morris, *The Measure of Civilization: How Social Development Decides the Fate of Nations*, Princeton University Press, 2013.
+
+### 制度、地租与文明僵化
+
+- Mancur Olson, *The Rise and Decline of Nations: Economic Growth, Stagflation, and Social Rigidities*, Yale University Press, 1982.
+- Daron Acemoglu and James A. Robinson, *Why Nations Fail: The Origins of Power, Prosperity, and Poverty*, Crown Business, 2012.
+- Joseph A. Tainter, *The Collapse of Complex Societies*, Cambridge University Press, 1988.
+- Peter Turchin and Sergey A. Nefedov, *Secular Cycles*, Princeton University Press, 2009.
+
+### 地租、寻租与生产性 / 非生产性创业
+
+- Henry George, *Progress and Poverty: An Inquiry into the Cause of Industrial Depressions and of Increase of Want with Increase of Wealth: The Remedy*, 1879.
+- William J. Baumol, “Entrepreneurship: Productive, Unproductive, and Destructive,” *Journal of Political Economy*, Vol. 98, No. 5, 1990, pp. 893-921.
 
 ## Demo 版结尾
 
