@@ -285,7 +285,7 @@ h3 {
 
 .guardrail-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   gap: 16px;
   margin-top: 44px;
 }
