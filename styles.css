@@ -132,6 +132,54 @@ h2 {
   letter-spacing: 0;
 }
 
+.anchor-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 0.86em;
+  height: 0.86em;
+  margin-left: 0.12em;
+  border-radius: 6px;
+  color: var(--gold);
+  font-size: 0.48em;
+  line-height: 1;
+  text-decoration: none;
+  vertical-align: middle;
+  opacity: 0.58;
+  transition: opacity 160ms ease, transform 160ms ease, background 160ms ease, color 160ms ease;
+}
+
+.anchor-link:hover,
+.anchor-link:focus-visible {
+  background: rgba(183, 121, 31, 0.12);
+  color: var(--gold);
+  opacity: 1;
+  outline: none;
+  transform: translateY(-1px);
+}
+
+.logic-band .anchor-link,
+.american-key .anchor-link,
+.loop-vision .anchor-link,
+.musk-egg .anchor-link,
+.formula-band .anchor-link {
+  color: #f2c36b;
+}
+
+.logic-band .anchor-link:hover,
+.logic-band .anchor-link:focus-visible,
+.american-key .anchor-link:hover,
+.american-key .anchor-link:focus-visible,
+.loop-vision .anchor-link:hover,
+.loop-vision .anchor-link:focus-visible,
+.musk-egg .anchor-link:hover,
+.musk-egg .anchor-link:focus-visible,
+.formula-band .anchor-link:hover,
+.formula-band .anchor-link:focus-visible {
+  background: rgba(242, 195, 107, 0.16);
+  color: #f2c36b;
+}
+
 h3 {
   margin: 0 0 12px;
   font-size: 1.25rem;
