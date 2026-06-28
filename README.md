@@ -9,6 +9,8 @@
 - `index.html`：GitHub Pages 首页目录索引。
 - `articles/`：每篇主题文章的独立页面。
 - `docs/framework.md`：理论框架的 Markdown 源文档。
+- `docs/thought-starmap.md`：思想星图的 Markdown 源文档。
+- `TODO.md`：把思想星图演化为可植入 LLM 的 Agent Core 的路线图。
 - `styles.css`：网站样式。
 - `scripts/publish-github-pages.sh`：创建 GitHub 仓库、推送项目、开启 GitHub Pages 的辅助脚本。
 
