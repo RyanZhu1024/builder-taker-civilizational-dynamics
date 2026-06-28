@@ -6,6 +6,7 @@
 
 ```text
 中心思想 = kernel
+kernel = 实事求是：尊重客观事实、自然规律和真实人性
 节点 = concepts / skills / loops
 边 = reasoning links
 LLM = 可替换 brain
@@ -94,4 +95,3 @@ growth loop = 把经验吸收回思想星图
 - [ ] 新增 `agent-core/kernel.md` 第一版。
 - [ ] 新增 `agent-core/concepts/` 第一批节点文件。
 - [ ] 设计第一个可植入 LLM 的 prompt pack。
-
