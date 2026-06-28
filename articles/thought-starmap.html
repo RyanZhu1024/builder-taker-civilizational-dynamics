@@ -1,0 +1,791 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>思想星图：从封闭系统到星际文明</title>
+    <meta name="description" content="一张从个人生命经验、文明动力学、Loop Engineering、美国钥匙、后资本主义、AI 机器人与星际文明展开的思想星图。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+      body {
+        background: #05070d;
+        color: #f7f2e8;
+      }
+
+      .starmap-shell {
+        min-height: 100vh;
+        padding: 24px;
+        background:
+          radial-gradient(circle at 50% 42%, rgba(242, 195, 107, 0.2), transparent 19%),
+          radial-gradient(circle at 18% 18%, rgba(37, 99, 235, 0.22), transparent 24%),
+          radial-gradient(circle at 84% 18%, rgba(15, 118, 110, 0.18), transparent 26%),
+          radial-gradient(circle at 74% 82%, rgba(159, 18, 57, 0.18), transparent 23%),
+          linear-gradient(180deg, #070914, #101016 54%, #08090f);
+        overflow: hidden;
+      }
+
+      .starmap-shell::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        background-image:
+          radial-gradient(circle, rgba(255, 255, 255, 0.72) 0 1px, transparent 1.5px),
+          radial-gradient(circle, rgba(242, 195, 107, 0.46) 0 1px, transparent 1.5px);
+        background-position: 0 0, 38px 64px;
+        background-size: 120px 120px, 170px 170px;
+        opacity: 0.18;
+      }
+
+      .starmap-topbar {
+        position: relative;
+        z-index: 5;
+        max-width: 1320px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        padding: 8px 0 30px;
+      }
+
+      .starmap-topbar a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .starmap-brand {
+        font-weight: 900;
+      }
+
+      .starmap-nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        color: rgba(247, 242, 232, 0.72);
+        font-size: 0.94rem;
+      }
+
+      .starmap-hero {
+        position: relative;
+        z-index: 2;
+        max-width: 1320px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: minmax(0, 0.74fr) minmax(320px, 0.26fr);
+        gap: 28px;
+        align-items: stretch;
+      }
+
+      .starmap-intro {
+        min-height: 210px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        padding: 28px 0;
+      }
+
+      .starmap-intro h1 {
+        max-width: 960px;
+        font-size: clamp(3rem, 8vw, 7.5rem);
+        line-height: 0.92;
+      }
+
+      .starmap-intro .lede {
+        max-width: 900px;
+        color: rgba(247, 242, 232, 0.76);
+      }
+
+      .kernel-card {
+        align-self: end;
+        padding: 24px;
+        border: 1px solid rgba(242, 195, 107, 0.28);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.075);
+        box-shadow: 0 28px 90px rgba(0, 0, 0, 0.34);
+      }
+
+      .kernel-card p {
+        margin: 0;
+        color: rgba(247, 242, 232, 0.76);
+      }
+
+      .kernel-card strong {
+        display: block;
+        margin-bottom: 12px;
+        color: #f2c36b;
+        font-size: 1.05rem;
+      }
+
+      .starmap-grid {
+        position: relative;
+        z-index: 2;
+        max-width: 1320px;
+        margin: 28px auto 0;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(320px, 390px);
+        gap: 22px;
+        align-items: stretch;
+      }
+
+      .starmap-canvas {
+        position: relative;
+        min-height: 720px;
+        border: 1px solid rgba(255, 255, 255, 0.13);
+        border-radius: 8px;
+        background:
+          radial-gradient(circle at 50% 50%, rgba(242, 195, 107, 0.12), transparent 18%),
+          radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.055), transparent 42%),
+          rgba(255, 255, 255, 0.045);
+        box-shadow: 0 34px 110px rgba(0, 0, 0, 0.42);
+        overflow: hidden;
+      }
+
+      .starmap-canvas::before,
+      .starmap-canvas::after {
+        content: "";
+        position: absolute;
+        border: 1px solid rgba(242, 195, 107, 0.12);
+        border-radius: 50%;
+        pointer-events: none;
+      }
+
+      .starmap-canvas::before {
+        inset: 15%;
+      }
+
+      .starmap-canvas::after {
+        inset: 30%;
+        border-color: rgba(37, 99, 235, 0.13);
+      }
+
+      .orbit-ring {
+        position: absolute;
+        inset: var(--inset);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 50%;
+        pointer-events: none;
+      }
+
+      .starmap-edges {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+      }
+
+      .starmap-edges line {
+        stroke: rgba(242, 195, 107, 0.36);
+        stroke-width: 1.4;
+        stroke-linecap: round;
+        stroke-dasharray: 8 10;
+        animation: edge-flow 7s linear infinite;
+      }
+
+      .starmap-edges line.secondary {
+        stroke: rgba(37, 99, 235, 0.26);
+      }
+
+      .thought-node {
+        position: absolute;
+        left: calc(var(--x) * 1%);
+        top: calc(var(--y) * 1%);
+        z-index: 2;
+        min-width: 118px;
+        max-width: 178px;
+        min-height: 54px;
+        padding: 10px 12px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 8px;
+        background:
+          linear-gradient(135deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.07)),
+          rgba(8, 10, 18, 0.82);
+        color: #fff;
+        box-shadow: 0 18px 46px rgba(0, 0, 0, 0.36);
+        cursor: pointer;
+        font: inherit;
+        text-align: left;
+        transform: translate(-50%, -50%);
+        transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease, background 180ms ease;
+      }
+
+      .thought-node:hover,
+      .thought-node.active {
+        border-color: rgba(242, 195, 107, 0.62);
+        background:
+          linear-gradient(135deg, rgba(242, 195, 107, 0.22), rgba(255, 255, 255, 0.08)),
+          rgba(8, 10, 18, 0.9);
+        box-shadow: 0 26px 80px rgba(0, 0, 0, 0.48);
+        transform: translate(-50%, -50%) translateY(-3px);
+      }
+
+      .thought-node[data-ring="0"] {
+        min-width: 188px;
+        min-height: 88px;
+        border-color: rgba(242, 195, 107, 0.66);
+        background:
+          radial-gradient(circle at 50% 0%, rgba(242, 195, 107, 0.32), transparent 58%),
+          rgba(8, 10, 18, 0.92);
+        text-align: center;
+      }
+
+      .node-label {
+        display: block;
+        color: rgba(247, 242, 232, 0.72);
+        font-size: 0.72rem;
+        font-weight: 900;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+
+      .node-title {
+        display: block;
+        margin-top: 4px;
+        font-weight: 900;
+        line-height: 1.18;
+      }
+
+      .node-tag {
+        display: block;
+        margin-top: 6px;
+        color: #f2c36b;
+        font-size: 0.75rem;
+        font-weight: 800;
+      }
+
+      .starmap-panel {
+        min-height: 720px;
+        display: flex;
+        flex-direction: column;
+        padding: 24px;
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.075);
+        box-shadow: 0 34px 110px rgba(0, 0, 0, 0.36);
+      }
+
+      .panel-kicker {
+        margin: 0 0 10px;
+        color: #f2c36b;
+        font-size: 0.78rem;
+        font-weight: 900;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .starmap-panel h2 {
+        margin-bottom: 14px;
+        font-size: clamp(1.7rem, 3vw, 2.8rem);
+      }
+
+      .starmap-panel p {
+        color: rgba(247, 242, 232, 0.76);
+      }
+
+      .panel-list {
+        display: grid;
+        gap: 10px;
+        margin: 22px 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .panel-list li {
+        padding: 12px 14px;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.06);
+        color: rgba(247, 242, 232, 0.78);
+      }
+
+      .panel-linkage {
+        margin-top: auto;
+        padding: 18px;
+        border-left: 4px solid #f2c36b;
+        background: rgba(242, 195, 107, 0.1);
+        color: #fff;
+        font-weight: 760;
+      }
+
+      .starmap-manifesto {
+        position: relative;
+        z-index: 2;
+        max-width: 1320px;
+        margin: 22px auto 0;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .starmap-manifesto article {
+        min-height: 220px;
+        padding: 24px;
+        border: 1px solid rgba(255, 255, 255, 0.13);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.07);
+        box-shadow: 0 24px 80px rgba(0, 0, 0, 0.28);
+      }
+
+      .starmap-manifesto h3,
+      .starmap-manifesto p {
+        margin: 0;
+      }
+
+      .starmap-manifesto h3 {
+        color: #f2c36b;
+      }
+
+      .starmap-manifesto p {
+        margin-top: 12px;
+        color: rgba(247, 242, 232, 0.74);
+      }
+
+      .agent-core {
+        position: relative;
+        z-index: 2;
+        max-width: 1320px;
+        margin: 22px auto 0;
+        padding: 34px;
+        border: 1px solid rgba(242, 195, 107, 0.22);
+        border-radius: 8px;
+        background:
+          linear-gradient(135deg, rgba(242, 195, 107, 0.12), rgba(255, 255, 255, 0.055)),
+          rgba(255, 255, 255, 0.06);
+        box-shadow: 0 34px 110px rgba(0, 0, 0, 0.36);
+      }
+
+      .agent-core h2 {
+        max-width: 960px;
+      }
+
+      .agent-core-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 14px;
+        margin-top: 26px;
+      }
+
+      .agent-core-grid div {
+        min-height: 138px;
+        padding: 18px;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 8px;
+        background: rgba(0, 0, 0, 0.16);
+      }
+
+      .agent-core-grid strong {
+        display: block;
+        color: #f2c36b;
+        margin-bottom: 8px;
+      }
+
+      .agent-core-grid p {
+        margin: 0;
+        color: rgba(247, 242, 232, 0.74);
+      }
+
+      .starmap-footer {
+        position: relative;
+        z-index: 2;
+        max-width: 1320px;
+        margin: 22px auto 0;
+        padding: 24px 0 40px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      @keyframes edge-flow {
+        to {
+          stroke-dashoffset: -180;
+        }
+      }
+
+      @media (max-width: 980px) {
+        .starmap-hero,
+        .starmap-grid,
+        .starmap-manifesto,
+        .agent-core-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .starmap-canvas,
+        .starmap-panel {
+          min-height: auto;
+        }
+
+        .starmap-canvas {
+          aspect-ratio: 1 / 1.08;
+        }
+
+        .thought-node {
+          min-width: 96px;
+          max-width: 126px;
+          padding: 8px 9px;
+          font-size: 0.82rem;
+        }
+
+        .thought-node[data-ring="0"] {
+          min-width: 140px;
+        }
+      }
+
+      @media (max-width: 620px) {
+        .starmap-shell {
+          padding: 20px;
+        }
+
+        .starmap-topbar {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+
+        .starmap-canvas {
+          min-height: 640px;
+          aspect-ratio: auto;
+        }
+
+        .thought-node {
+          min-width: 88px;
+          max-width: 112px;
+          font-size: 0.76rem;
+        }
+
+        .node-tag {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="starmap-shell">
+      <nav class="starmap-topbar" aria-label="主导航">
+        <a class="starmap-brand" href="../index.html">文明动力学</a>
+        <div class="starmap-nav">
+          <a href="../index.html#archive">目录</a>
+          <a href="builder-taker-civilizational-dynamics.html">文明框架</a>
+          <a href="../docs/thought-starmap.md">源文档</a>
+        </div>
+      </nav>
+
+      <header class="starmap-hero">
+        <section class="starmap-intro" aria-labelledby="starmap-title">
+          <p class="eyebrow">思想星图</p>
+          <h1 id="starmap-title">从封闭系统到星际文明</h1>
+          <p class="lede">
+            这不是一篇线性文章，而是一张从个人生命经验爆炸出来的思想地图：封闭系统带来慢性死亡，生命与文明必须不断打开新边疆。
+          </p>
+        </section>
+        <aside class="kernel-card">
+          <strong>中心思想奇点</strong>
+          <p>如果没有入口，就寻找入口；如果没有边疆，就建造边疆。新的文明必须永远保留重新开始的入口。</p>
+        </aside>
+      </header>
+
+      <section class="starmap-grid" aria-label="思想星图交互区">
+        <div class="starmap-canvas" id="starmapCanvas">
+          <div class="orbit-ring" style="--inset: 8%;"></div>
+          <div class="orbit-ring" style="--inset: 22%;"></div>
+          <div class="orbit-ring" style="--inset: 36%;"></div>
+          <svg class="starmap-edges" id="starmapEdges" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"></svg>
+        </div>
+
+        <aside class="starmap-panel" id="detailPanel" aria-live="polite">
+          <p class="panel-kicker" id="panelKicker">Origin</p>
+          <h2 id="panelTitle">思想奇点</h2>
+          <p id="panelBody">封闭系统会带来慢性死亡；生命与文明必须不断打开新边疆。</p>
+          <ul class="panel-list" id="panelList"></ul>
+          <p class="panel-linkage" id="panelLinkage">它不是理论装饰，而是过去十年迁移、重启、寻找入口的生命经验。</p>
+        </aside>
+      </section>
+
+      <section class="starmap-manifesto" aria-label="星图三条守则">
+        <article>
+          <h3>不是线性文章</h3>
+          <p>每个节点都可以继续展开成人生规划、职业规划、代码架构、agent 设计、组织治理或文明分析。</p>
+        </article>
+        <article>
+          <h3>不是封闭教义</h3>
+          <p>每条边都必须允许 alarm：现实失败、逻辑冲突、价值漂移，都要能回写进 growth loop。</p>
+        </article>
+        <article>
+          <h3>不是替代个体</h3>
+          <p>未来 agent core 不是神秘意识复制，而是一个可审计、可成长、能从中心思想展开的个人思想操作系统。</p>
+        </article>
+      </section>
+
+      <section class="agent-core" id="agent-core-vision">
+        <p class="section-kicker">Agent Core 远景</p>
+        <h2>中心思想可以成为 kernel，LLM 只是可替换的 brain。</h2>
+        <div class="agent-core-grid">
+          <div>
+            <strong>Kernel</strong>
+            <p>封闭系统带来慢性死亡；文明必须保留重新开始的入口。</p>
+          </div>
+          <div>
+            <strong>Nodes</strong>
+            <p>人生、职业、代码、架构、agent、美国、AI、星际都变成可组合 concepts。</p>
+          </div>
+          <div>
+            <strong>Gates</strong>
+            <p>每次推演都要经过逻辑、现实、伦理和可审计性检查。</p>
+          </div>
+          <div>
+            <strong>Growth Loop</strong>
+            <p>对话、失败、成功和新证据不断回写，让系统成长而不是漂移。</p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="starmap-footer">
+        <a class="button primary" href="../docs/thought-starmap.md">阅读源文档</a>
+        <a class="button" href="builder-taker-civilizational-dynamics.html#loop-engineering">回到 Loop Engineering</a>
+        <a class="button" href="builder-taker-civilizational-dynamics.html#american-key">回到美国钥匙</a>
+      </footer>
+    </main>
+
+    <script>
+      const nodes = [
+        {
+          id: "origin",
+          ring: 0,
+          x: 50,
+          y: 50,
+          label: "Origin",
+          title: "思想奇点",
+          tag: "中心",
+          body: "封闭系统会带来慢性死亡；生命与文明必须不断打开新边疆。",
+          points: ["如果没有入口，就寻找入口。", "如果没有边疆，就建造边疆。", "未来的原则不是稳定地服从旧系统，而是保留重新开始的入口。"],
+          linkage: "所有分支都从这里爆炸出来：个人迁移、文明动力学、反黑箱、美国钥匙、后资本主义和星际文明。"
+        },
+        {
+          id: "personal",
+          ring: 1,
+          x: 50,
+          y: 18,
+          label: "Life",
+          title: "个人生命经验",
+          tag: "寻找入口",
+          body: "出国、留学、工作、跳槽，本质上不是出去看看，而是不断离开封闭系统，寻找更开放的 loop。",
+          points: ["识别封闭系统。", "承担风险迁移。", "重新获得 Builder 入口。"],
+          linkage: "个人经验是整套思想的证据源：你先在生命里感到封闭系统的死亡，再把它升级成文明模型。"
+        },
+        {
+          id: "builder-taker",
+          ring: 2,
+          x: 28,
+          y: 25,
+          label: "Civilization",
+          title: "Builder / Taker",
+          tag: "文明动力学",
+          body: "Builder 打开边疆并创造新增剩余；Taker 控制入口并把剩余转化为地租。",
+          points: ["角色会漂移，不是固定族群。", "好 gate 创造协调价值。", "坏 wall 阻断反馈并抽租。"],
+          linkage: "它把个人的封闭感，翻译成文明层面的入口控制问题。"
+        },
+        {
+          id: "entropy",
+          ring: 2,
+          x: 72,
+          y: 25,
+          label: "Entropy",
+          title: "熵增与负熵",
+          tag: "底层压力",
+          body: "熵增不可逆，但文明可以通过打开更大的开放系统，把死亡从结局改写成升级压力。",
+          points: ["旧边界内，欲望与资源会互相撕裂。", "开放系统需要持续引入能源、信息、反馈和空间。", "Builder 的答案是打开新负熵来源。"],
+          linkage: "它解释为什么文明不能只管理存量，而必须不断开辟。"
+        },
+        {
+          id: "loop-engineering",
+          ring: 3,
+          x: 17,
+          y: 47,
+          label: "Engineering",
+          title: "Loop Engineering",
+          tag: "可信系统",
+          body: "可信系统不靠相信大脑，而靠 reader、gate、contract、ledger、alarm 和 growth loop。",
+          points: ["纪律不是 gate。", "输出要在消费处验证。", "错误必须能早响并回写。"],
+          linkage: "它把反黑箱从政治情绪，变成可实施的工程方法。"
+        },
+        {
+          id: "anti-blackbox",
+          ring: 3,
+          x: 83,
+          y: 47,
+          label: "Audit",
+          title: "反黑箱工程",
+          tag: "拆 wall",
+          body: "把不可审计的 wall 重新工程化为可验证 contract、可追溯 ledger、会触发 alarm、能吸收经验的 growth loop。",
+          points: ["大黑箱拆成小模块。", "流程可复核，责任可追踪。", "不要求盲信，只要求可审计。"],
+          linkage: "它是美国、平台、选举、AI、组织和 agent core 都必须遵守的共同规则。"
+        },
+        {
+          id: "american-key",
+          ring: 4,
+          x: 17,
+          y: 74,
+          label: "America",
+          title: "美国钥匙",
+          tag: "重新开始",
+          body: "美国之所以重要，不是因为它古老，而是因为它长期允许旧世界里没有入口的人重新成为 Builder。",
+          points: ["移民、边疆、自治、风险资本。", "失败后重新开始。", "个人用能力挑战身份秩序。"],
+          linkage: "它是个人生命经验与文明模型之间最现实的桥。"
+        },
+        {
+          id: "post-capitalism",
+          ring: 4,
+          x: 38,
+          y: 84,
+          label: "Post-Capitalism",
+          title: "后资本主义新大航海",
+          tag: "生产力入口",
+          body: "不是结果均等，不是大锅饭，而是让算力、数据、算法、AI 工具、机器人、能源和轨道入口极度便宜、开放、可获得。",
+          points: ["共产的不是旧生产资料，而是新生产力入口。", "机会趋向均等，结果仍然多样。", "竞争从生存争夺升级为探索创造。"],
+          linkage: "它把旧政治词汇从框架中剥离出来，保留真正有生命力的未来方向。"
+        },
+        {
+          id: "benevolent-culture",
+          ring: 4,
+          x: 62,
+          y: 84,
+          label: "Culture",
+          title: "文化向善",
+          tag: "善意权限",
+          body: "数据共享本身不是善。只有物质丰裕、权限可审计、文化向善，机器人理解你才会成为知己，而不是操控工具。",
+          points: ["个体保留自我。", "共享必须可授权、可撤回、可追责。", "善意 loop 优先于控制 wall。"],
+          linkage: "它给 AI 与机器人时代补上价值和权限边界。"
+        },
+        {
+          id: "ai-robots",
+          ring: 4,
+          x: 83,
+          y: 74,
+          label: "AI",
+          title: "AI 与机器人知己",
+          tag: "个体延伸",
+          body: "机器人不只是工具，也可能成为个体的镜像、伙伴和思想延伸。",
+          points: ["理解隐私背后的驱动逻辑。", "帮助人成长而不是管理人。", "把生存劳动转化为探索能力。"],
+          linkage: "它连接个人自我、数据共享、文化向善和后资本主义生产力。"
+        },
+        {
+          id: "spacex-tesla",
+          ring: 5,
+          x: 50,
+          y: 92,
+          label: "Musk Stack",
+          title: "马斯克工程堆栈",
+          tag: "物理能力",
+          body: "SpaceX 打开轨道入口，Tesla 连接能源、机器、AI 和真实世界数据。它们像一套把资本压回物理能力的 Builder 系统。",
+          points: ["文明价值不等于当前估值。", "真正 gate 是成本曲线是否持续下降。", "新入口必须继续开放，而不是变成新地租。"],
+          linkage: "它是星际文明路径的现实样本，也是 Builder 变 Taker 的压力测试。"
+        },
+        {
+          id: "star-civilization",
+          ring: 5,
+          x: 50,
+          y: 7,
+          label: "Stars",
+          title: "星际文明",
+          tag: "终极边疆",
+          body: "如果地球系统封闭，就打开轨道；如果轨道仍然不够，就打开火星；如果太阳系仍然不够，就打开恒星际边疆。",
+          points: ["Star Trek 路线不是技术炫耀。", "人类从生存竞争转向探索竞争。", "欲望从占有资源升维为理解宇宙。"],
+          linkage: "它是对熵增悲观的 Builder 式回答：不否认死亡，而是扩大生命的开放系统。"
+        },
+        {
+          id: "agent-core",
+          ring: 3,
+          x: 50,
+          y: 68,
+          label: "Agent Core",
+          title: "未来 Agent Core",
+          tag: "另一个我",
+          body: "中心思想成为 kernel，节点成为 concepts / skills / loops，LLM 只是可替换的 brain。",
+          points: ["对话和行动进入 ledger。", "逻辑矛盾和现实失败触发 alarm。", "growth loop 把经验吸收回星图。"],
+          linkage: "它不是神秘意识复制，而是一个可审计、可成长、能从中心思想展开的个人思想操作系统。"
+        }
+      ];
+
+      const edges = [
+        ["origin", "personal"],
+        ["origin", "builder-taker"],
+        ["origin", "entropy"],
+        ["origin", "loop-engineering"],
+        ["origin", "anti-blackbox"],
+        ["personal", "american-key"],
+        ["builder-taker", "loop-engineering"],
+        ["entropy", "star-civilization"],
+        ["loop-engineering", "anti-blackbox"],
+        ["loop-engineering", "agent-core"],
+        ["american-key", "post-capitalism"],
+        ["post-capitalism", "benevolent-culture"],
+        ["benevolent-culture", "ai-robots"],
+        ["ai-robots", "spacex-tesla"],
+        ["spacex-tesla", "star-civilization"],
+        ["agent-core", "post-capitalism"],
+        ["agent-core", "benevolent-culture"]
+      ];
+
+      const canvas = document.getElementById("starmapCanvas");
+      const edgeLayer = document.getElementById("starmapEdges");
+      const panelKicker = document.getElementById("panelKicker");
+      const panelTitle = document.getElementById("panelTitle");
+      const panelBody = document.getElementById("panelBody");
+      const panelList = document.getElementById("panelList");
+      const panelLinkage = document.getElementById("panelLinkage");
+
+      function drawEdges() {
+        edgeLayer.innerHTML = "";
+        edges.forEach(([fromId, toId], index) => {
+          const from = nodes.find((node) => node.id === fromId);
+          const to = nodes.find((node) => node.id === toId);
+          const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
+          line.setAttribute("x1", from.x);
+          line.setAttribute("y1", from.y);
+          line.setAttribute("x2", to.x);
+          line.setAttribute("y2", to.y);
+          if (index % 3 === 0) line.classList.add("secondary");
+          edgeLayer.appendChild(line);
+        });
+      }
+
+      function renderNodes() {
+        nodes.forEach((node) => {
+          const button = document.createElement("button");
+          button.className = "thought-node";
+          button.id = node.id;
+          button.dataset.id = node.id;
+          button.dataset.ring = node.ring;
+          button.style.setProperty("--x", node.x);
+          button.style.setProperty("--y", node.y);
+          button.innerHTML = `<span class="node-label">${node.label}</span><span class="node-title">${node.title}</span><span class="node-tag">${node.tag}</span>`;
+          button.addEventListener("click", () => selectNode(node.id, true));
+          canvas.appendChild(button);
+        });
+      }
+
+      function selectNode(id, updateHash = false) {
+        const node = nodes.find((item) => item.id === id) || nodes[0];
+        document.querySelectorAll(".thought-node").forEach((button) => {
+          button.classList.toggle("active", button.dataset.id === node.id);
+        });
+        panelKicker.textContent = `${node.label} / ${node.tag}`;
+        panelTitle.textContent = node.title;
+        panelBody.textContent = node.body;
+        panelList.innerHTML = node.points.map((point) => `<li>${point}</li>`).join("");
+        panelLinkage.textContent = node.linkage;
+        if (updateHash) history.replaceState(null, "", `#${node.id}`);
+      }
+
+      drawEdges();
+      renderNodes();
+      selectNode(location.hash ? location.hash.slice(1) : "origin");
+
+      window.addEventListener("hashchange", () => {
+        selectNode(location.hash ? location.hash.slice(1) : "origin");
+      });
+    </script>
+  </body>
+</html>
