@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>知识分支：虚拟世界、负熵与入口</title>
+    <meta name="description" content="把《虚拟世界》36章提炼为能源上限、网络先于组织、虚拟六入口与虚拟吸收式倒退，并与建造者-攫取者框架对齐。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+      .chapter-index {
+        display: grid;
+        gap: 8px;
+        margin: 28px 0 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .chapter-index a {
+        display: grid;
+        grid-template-columns: 6.5rem minmax(0, 1fr);
+        gap: 12px;
+        align-items: baseline;
+        padding: 12px 14px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.72);
+        box-shadow: var(--shadow-soft);
+        text-decoration: none;
+        transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+      }
+
+      .chapter-index a:hover,
+      .chapter-index a:focus-visible {
+        border-color: rgba(183, 121, 31, 0.42);
+        box-shadow: var(--shadow-lift);
+        outline: none;
+        transform: translateY(-2px);
+      }
+
+      .chapter-index time {
+        color: var(--gold);
+        font-size: 0.82rem;
+        font-weight: 800;
+        font-variant-numeric: tabular-nums;
+      }
+
+      .source-note {
+        margin-top: 22px;
+      }
+
+      .hero-copy h1 {
+        font-size: clamp(2.8rem, 7.2vw, 6.4rem);
+      }
+
+      @media (max-width: 620px) {
+        .chapter-index a {
+          grid-template-columns: 1fr;
+          gap: 4px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <p class="all-articles" style="max-width:1180px;margin:0 auto;padding:12px 24px 0;font-size:0.9rem"><a href="../index.html" style="color:inherit;opacity:0.72;text-decoration:none">← All articles</a></p>
+    <header class="hero">
+      <nav class="topbar" aria-label="主导航">
+        <a class="brand" href="../index.html">文明动力学</a>
+        <div class="navlinks">
+          <a href="../index.html#archive">目录</a>
+          <a href="#concepts">概念</a>
+          <a href="#mechanisms">机制</a>
+          <a href="#rules">规则</a>
+          <a href="#mapping">映射</a>
+          <a href="#entries">六入口</a>
+          <a href="#fork">分叉</a>
+          <a href="#chapters">章节</a>
+          <a href="../builder-taker/">文明框架</a>
+          <a href="../docs/branches/virtual-world.md">源文档</a>
+          <a href="../docs/branches/virtual-world-summary.md">总结</a>
+        </div>
+      </nav>
+
+      <div class="hero-grid">
+        <section class="hero-copy" aria-labelledby="hero-title">
+          <p class="eyebrow">知识分支 · 2026-11-14</p>
+          <h1 id="hero-title">虚拟世界、<br>负熵与入口</h1>
+          <p class="lede">
+            文明是一个靠交换网络从外界获取负熵的耗散结构。当地球的物理边疆逼近上限，欲望就向两个方向外溢：太空，和虚拟世界。虚拟世界的上限由现实中的能源和算力决定。它的入口，就是下一代地租的争夺点。
+          </p>
+          <div class="actions">
+            <a class="button primary" href="../docs/branches/virtual-world.md">阅读分支源文档</a>
+            <a class="button" href="../docs/branches/virtual-world-summary.md">全书总结与批判</a>
+            <a class="button" href="../builder-taker/">回到文明框架</a>
+          </div>
+        </section>
+
+        <section class="signal-panel" aria-label="虚拟世界结构图">
+          <div class="orbital-map">
+            <div class="ring ring-one"></div>
+            <div class="ring ring-two"></div>
+            <div class="node builder">能源</div>
+            <div class="node surplus">算力</div>
+            <div class="node frontier">虚拟</div>
+            <div class="node taker">入口</div>
+            <div class="node rent">地租</div>
+            <div class="axis"></div>
+          </div>
+        </section>
+      </div>
+    </header>
+
+    <main>
+      <section class="band" id="source">
+        <div class="section-inner">
+          <p class="section-kicker">来源与边界</p>
+          <h2>只吸收经得起检验的部分。 <a class="anchor-link" href="#source" aria-label="复制来源与边界链接">#</a></h2>
+          <p>
+            来源是公众号「缠见如故」专辑《虚拟世界》，共 36 章（2024-08-16 至 2025-11-28）。本页是转述和框架对齐，不是原文。公众号全文有版权，公开仓库只放元数据、链接和转述。
+          </p>
+          <p class="culture-note source-note">
+            原书讲欲望和资本。后半句——入口与地租——是本分支补上的建造者-攫取者视角。可信度分成四档：<strong>[硬]</strong> 有物理、史料或工程依据；<strong>[假说]</strong> 可检验但尚未验证；<strong>[命理]</strong> 不可证伪，不采纳；<strong>[规范]</strong> 价值立场，不是推论。
+          </p>
+          <div class="actions">
+            <a class="button" href="../docs/branches/virtual-world-summary.md">阅读全书总结、最强论证与事实纠错</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="guardrail-band" id="concepts">
+        <div class="section-inner">
+          <p class="section-kicker">可复用概念</p>
+          <h2>先把能带走的概念分开，再决定哪些进入推导。 <a class="anchor-link" href="#concepts" aria-label="复制可复用概念链接">#</a></h2>
+          <div class="guardrail-grid" aria-label="虚拟世界概念">
+            <article>
+              <span>VW-C01 · 方法</span>
+              <h3>论域决定视角</h3>
+              <p>任何理论的意识形态秘密都藏在最初的定义里，定义者本身也被包含在定义中。</p>
+            </article>
+            <article>
+              <span>VW-C02 · 方法</span>
+              <h3>分别到网络</h3>
+              <p>分别形成分类，分类形成集合。集合分级、可流动，内外靠网络交换物质和能量。</p>
+            </article>
+            <article>
+              <span>VW-C04 · 硬</span>
+              <h3>负熵获取能力</h3>
+              <p>文明能力等于获取负熵的能力。一条线是人-物：科技、能源、交通。另一条是人-人：分工和组织。</p>
+            </article>
+            <article>
+              <span>VW-C11 · 硬</span>
+              <h3>现实决定虚拟上限</h3>
+              <p>虚拟世界的负熵来自现实能源。算力就是转化后的能源。虚拟世界没有独立的负熵来源。</p>
+            </article>
+            <article>
+              <span>VW-C10 · 硬</span>
+              <h3>自相似与不可重复</h3>
+              <p>虚拟世界复制现实结构，同时可复制、时间可逆、多样性高。复制几乎零成本，是技术特性，不是比喻。</p>
+            </article>
+            <article>
+              <span>VW-C12 · 可用</span>
+              <h3>虚拟世界的实与虚</h3>
+              <p>实是数据的产生、存储、传输、计算，加上能源。虚是虚拟人、资产、货币、社会与制度。</p>
+            </article>
+            <article>
+              <span>VW-C13 · 硬</span>
+              <h3>虚拟世界之门</h3>
+              <p>生物人进入虚拟世界的终端序列：电话、电视、电脑、手机、智能眼镜、脑机接口。</p>
+            </article>
+            <article>
+              <span>VW-C09 · 可用</span>
+              <h3>两个世界的三特征</h3>
+              <p>现实世界是物理性、资本化、社会性。虚拟世界是数据性、资本虚拟化、社会性。</p>
+            </article>
+            <article>
+              <span>VW-C05 · 假说</span>
+              <h3>二元结构定律</h3>
+              <p>现实在环境与结构的对抗中寻找最佳结构，也就是无限欲望与有限资源之间的妥协。</p>
+            </article>
+            <article>
+              <span>VW-C14 · 假说</span>
+              <h3>三段走势</h3>
+              <p>实中虚（数字化），虚中实（数据基建），虚中虚（数字社会）。虚拟人也有对应的三段，作者自己声明这是猜想。</p>
+            </article>
+            <article>
+              <span>VW-C08 · 类比</span>
+              <h3>虚实相生</h3>
+              <p>有实体就有对应的虚体。这是类比，不是证明，不能推出“虚拟人必然存在”。</p>
+            </article>
+            <article>
+              <span>VW-C16 · 不采纳</span>
+              <h3>走势术语</h3>
+              <p>进入段、中枢、离开段、区间套和“共振”是命理。不进入推导链。依赖它们的时间判断作废。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="logic-band" id="mechanisms">
+        <div class="section-inner">
+          <p class="section-kicker">因果机制</p>
+          <h2>虚拟世界不是另一套物理，而是现实负熵的一种去向。 <a class="anchor-link" href="#mechanisms" aria-label="复制因果机制链接">#</a></h2>
+          <div class="logic-stack" aria-label="虚拟世界因果机制">
+            <article class="logic-step">
+              <span class="step-index">M1</span>
+              <h3>能源上限</h3>
+              <p>现实能源决定算力，算力决定虚拟世界的规模与活性。虚拟世界没有独立的负熵来源。</p>
+              <p class="step-conclusion">能源账本对不上，数字文明叙事就打折。</p>
+            </article>
+            <article class="logic-step">
+              <span class="step-index">M2</span>
+              <h3>网络先于组织</h3>
+              <p>交换网络升级，交通、信息和货币的交换成本下降，分工才能细化，更高级的组织才会出现。运河、铁路和互联网都是史料。</p>
+              <p class="step-conclusion">没有交换网络，就没有高级组织。</p>
+            </article>
+            <article class="logic-step">
+              <span class="step-index">M3</span>
+              <h3>欲望外溢</h3>
+              <p>欲望无限，物理资源有限。无法满足的欲望先进入想象，神话和文学，再进入虚拟世界。</p>
+              <p class="step-conclusion">这是假说，要配可观察指标。</p>
+            </article>
+            <article class="logic-step">
+              <span class="step-index">M4</span>
+              <h3>双负熵线</h3>
+              <p>科技（人-物）进步，社会组织（人-人）必须重组，二者互为反馈。只有一条线前进时会失衡。</p>
+              <p class="step-conclusion">与本库的剩余分配线同构。</p>
+            </article>
+            <article class="logic-step">
+              <span class="step-index">M5</span>
+              <h3>复制成本塌缩</h3>
+              <p>数据复制的边际成本接近零，多样性爆炸。稀缺性和身份必须人为构造：账号、签名、许可、确权。</p>
+              <p class="step-conclusion">这些稀缺制造点是天然的 gate 候选。</p>
+            </article>
+            <article class="logic-step">
+              <span class="step-index">M6</span>
+              <h3>虚到实的反馈</h3>
+              <p>数字孪生和仿真降低物理试错成本，物理建造可以因此加速。方向是硬的，原书里的具体百分比未核实，不能引用。</p>
+              <p class="step-conclusion">虚拟工具可以服务物理边疆。</p>
+            </article>
+            <article class="logic-step">
+              <span class="step-index">M7</span>
+              <h3>从属到独立</h3>
+              <p>虚拟世界在达到现实同级之前从属于现实。一旦形成独立走势，就会与现实竞争话语权。</p>
+              <p class="step-conclusion">从属程度高时，虚拟主权只是修辞。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="band" id="rules">
+        <div class="section-inner">
+          <p class="section-kicker">推导规则</p>
+          <h2>拿来分析文明问题之前，先过这八条。 <a class="anchor-link" href="#rules" aria-label="复制推导规则链接">#</a></h2>
+          <div class="guardrail-grid" aria-label="推导规则">
+            <article>
+              <span>R1 · M1</span>
+              <h3>先查能源账本。</h3>
+              <p>判断任何数字文明、虚拟经济或 AI 叙事，先问电力、芯片、数据中心和冷却从哪里来，由谁定价。</p>
+            </article>
+            <article>
+              <span>R2 · M2</span>
+              <h3>网络先于组织。</h3>
+              <p>预测全球治理、虚拟国家或 DAO 能否出现，先看支撑它的交换网络是否已经存在，交换成本是否已经足够低。</p>
+            </article>
+            <article>
+              <span>R3 · M4</span>
+              <h3>两条线都要查。</h3>
+              <p>同时检查人-物（能源、技术成本曲线）和人-人（分工、制度、进入率）。只有一条线改善，标记为失衡风险。</p>
+            </article>
+            <article>
+              <span>R4 · M5</span>
+              <h3>复制便宜，稀缺就会被制造。</h3>
+              <p>零边际成本的领域里，价值集中到身份、确权、排序、分发和算力配额。这些点是 gate 候选。</p>
+            </article>
+            <article>
+              <span>R5 · M7</span>
+              <h3>先确认从属关系。</h3>
+              <p>虚拟系统的规则在多大程度上被云服务商、监管和芯片出口管制控制？从属程度高时，不要把虚拟主权当成事实。</p>
+            </article>
+            <article>
+              <span>R6</span>
+              <h3>类比只能出假说。</h3>
+              <p>虚实相生、社会形态自相似可以用来提出假说，不能用来得出结论。每个类比都要配一个可观察指标。</p>
+            </article>
+            <article>
+              <span>R7</span>
+              <h3>规范和推论分开。</h3>
+              <p>“大同”、人类命运共同体和“全球人口等于消费人口”是价值立场，不能当作推导出来的必然结论。</p>
+            </article>
+            <article>
+              <span>R8</span>
+              <h3>不采纳走势命理。</h3>
+              <p>K 线术语、5 倍规律和费根鲍姆类比不进入推导链。依赖它们的时间判断作废。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="band muted" id="mapping">
+        <div class="section-inner">
+          <p class="section-kicker">与建造者-攫取者框架</p>
+          <h2>同构的留下，缺口补上，命理的丢掉。 <a class="anchor-link" href="#mapping" aria-label="复制框架映射链接">#</a></h2>
+          <p>
+            剩余就是可自由调度的负熵。虚拟世界被明确列为一类边疆，有自己的实、虚两层。原书几乎不讲谁控制入口，这是本分支要补的缺口。
+          </p>
+          <div class="guardrail-grid" aria-label="框架映射">
+            <article>
+              <span>同构</span>
+              <h3>剩余 = 负熵获取能力</h3>
+              <p>本书把这条能力拆成人-物和人-人。本库的第一层因此多了一个分解，而不是多了一套语言。</p>
+            </article>
+            <article>
+              <span>扩展</span>
+              <h3>新边疆包含虚拟世界</h3>
+              <p>突破资源瓶颈有两条路：太空是物理边疆，虚拟世界是信息边疆。虚拟边疆有实、虚两层。</p>
+            </article>
+            <article>
+              <span>缺口</span>
+              <h3>原书没有入口主体</h3>
+              <p>它把方向交给笼统的“资本”。按本框架，方向取决于入口是协调型 gate，还是地租型 wall。</p>
+            </article>
+            <article>
+              <span>以本库为准</span>
+              <h3>周期靠机制，不靠命理</h3>
+              <p>“走势终完美”和生住坏灭在形式上像九步周期。本库的周期由剩余、入口和反馈推动。</p>
+            </article>
+            <article>
+              <span>张力</span>
+              <h3>消费入口不是建造者入口</h3>
+              <p>原书把全员消费人口化当终点。本库关心中位数人群能否获得建造者入口，而不只是消费入口。</p>
+            </article>
+            <article>
+              <span>边界不同</span>
+              <h3>熵只作启发式</h3>
+              <p>方向一致：开放系统要持续引入能量。本库明说熵是类比。原书把它当定律，还误称耗散结构驳倒了热寂说。采用本库边界。</p>
+            </article>
+            <article>
+              <span>强互补</span>
+              <h3>虚拟边疆测试要加能源账本</h3>
+              <p>新边疆测试在虚拟一侧必须加上：能源和算力成本是否下降，以及由谁控制。</p>
+            </article>
+            <article>
+              <span>一致</span>
+              <h3>虚拟世界继承现实倾向</h3>
+              <p>AI 会放大它所在系统的倾向。同一问题在不同模型里得到不同答案，说明开放还是封闭由现实决定，轶事本身不是证据。</p>
+            </article>
+            <article>
+              <span>同源</span>
+              <h3>现实是第一前提</h3>
+              <p>原书方法论说现实是一切逻辑前提的唯一基础，和思想星图的实事求是同源。命理和未核实数据违背了这一点。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="guardrail-band" id="entries">
+        <div class="section-inner">
+          <p class="section-kicker">补上缺失的攫取者</p>
+          <h2>虚拟世界的六个入口。 <a class="anchor-link" href="#entries" aria-label="复制六个入口链接">#</a></h2>
+          <p>
+            检验方法沿用本库：移除或替换某个入口之后，虚拟世界的总剩余——创作者数量、新进入者、价格、质量——是上升还是下降。
+          </p>
+          <div class="guardrail-grid" aria-label="虚拟世界六个入口">
+            <article>
+              <span>01 · 门</span>
+              <h3>终端和操作系统</h3>
+              <p>手机、眼镜、脑机接口。谁决定能装什么，抽成多少？</p>
+            </article>
+            <article>
+              <span>02 · 身份</span>
+              <h3>账号、实名、数字分身</h3>
+              <p>身份是否可移植？能否被单方面注销？</p>
+            </article>
+            <article>
+              <span>03 · 算力和能源</span>
+              <h3>配额、价格、出口管制</h3>
+              <p>普通建造者能否买到算力和电力，还是只能租到别人定价的配额？</p>
+            </article>
+            <article>
+              <span>04 · 数据</span>
+              <h3>采集权、确权、训练权</h3>
+              <p>谁拥有数字孪生的原始数据？</p>
+            </article>
+            <article>
+              <span>05 · 价值</span>
+              <h3>虚拟货币、支付、交易所</h3>
+              <p>规则是否可审计？</p>
+            </article>
+            <article>
+              <span>06 · 规则</span>
+              <h3>平台治理与模型对齐</h3>
+              <p>内容审核和模型规则是否可复核、可挑战？本库的立场是：规则必须开放进入、可复核、可挑战。</p>
+            </article>
+          </div>
+          <p class="culture-note source-note">
+            原书第 36 章倾向于在全球层面掌握话语权、以大同为导向建立高级别规则。本库倾向开放入口、可审计、反黑箱。两者能达成的共识只有一点：虚拟世界的规则应当在它超越现实之前就确立。分歧在于由谁来定，以及规则是否可审计。
+          </p>
+        </div>
+      </section>
+
+      <section class="fork-band" id="fork">
+        <div class="section-inner">
+          <p class="section-kicker">新的分叉</p>
+          <h2>虚拟吸收式倒退，对照仿真加速建造。 <a class="anchor-link" href="#fork" aria-label="复制分叉链接">#</a></h2>
+          <p>
+            欲望外溢给本库第十五层的高级倒退补上一种具体机制。判别指标：虚拟经济的增长，是在降低物理建造成本，还是在替代物理建设？
+          </p>
+          <div class="branch-grid">
+            <article class="branch branch-builder">
+              <p class="branch-label">仿真加速建造</p>
+              <h3>虚拟世界作为工具</h3>
+              <p>数字孪生、仿真和 AI 设计降低物理试错成本，再推动能源、机器人和发射成本下降，通向星际边疆。</p>
+              <code>虚拟工具 → 试错成本下降 → 能源、机器人、发射成本下降 → 星际边疆</code>
+            </article>
+            <article class="branch branch-taker">
+              <p class="branch-label">虚拟吸收式倒退</p>
+              <h3>替代满足压低建造</h3>
+              <p>物理边疆停滞之后，欲望在虚拟世界获得替代满足。资本流向注意力和虚拟资产地租，建造者乐观乘数下降，表面却很繁荣。</p>
+              <code>物理边疆停滞 → 虚拟替代满足 → 注意力与资产地租 → 建造者乐观乘数下降</code>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="band" id="reject">
+        <div class="section-inner">
+          <p class="section-kicker">明确拒绝</p>
+          <h2>这些部分不进入本库的推导链。 <a class="anchor-link" href="#reject" aria-label="复制拒绝清单链接">#</a></h2>
+          <div class="guardrail-grid" aria-label="拒绝清单">
+            <article>
+              <span>命理</span>
+              <h3>走势术语和 5 倍规律</h3>
+              <p>进入段、中枢、离开段、区间套、“第六次大灭绝共振”的时间判断，以及费根鲍姆常数类比，都没有机制依据。</p>
+            </article>
+            <article>
+              <span>物理错误</span>
+              <h3>耗散结构没有驳倒热寂说</h3>
+              <p>耗散结构是局部有序，代价是向环境排熵。它不否定孤立系统的熵增。熵不能直接当成社会定律。</p>
+            </article>
+            <article>
+              <span>规范</span>
+              <h3>大同不是逻辑必然</h3>
+              <p>全球消费人口化、人类命运共同体，是价值立场和政治表述，不能以纯逻辑推导的名义使用。</p>
+            </article>
+            <article>
+              <span>未核实</span>
+              <h3>没有来源的百分比不得引用</h3>
+              <p>第 29、34 章的案例数字，以及“虚实相生所以虚拟人必然存在”，在核实之前只当作假说来源。细节见全书总结。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="guardrail-band" id="tests">
+        <div class="section-inner">
+          <p class="section-kicker">可证伪检验</p>
+          <h2>每条假说都要写明什么观察会削弱它。 <a class="anchor-link" href="#tests" aria-label="复制可证伪检验链接">#</a></h2>
+          <div class="guardrail-grid" aria-label="可证伪检验">
+            <article>
+              <span>M1 能源上限</span>
+              <h3>看用电和单位算力成本</h3>
+              <p>若虚拟经济规模长期增长，同时能源和算力投入不增，且不能用效率提升解释，这条假说就被削弱。</p>
+            </article>
+            <article>
+              <span>M2 网络先于组织</span>
+              <h3>看跨平台可移植率</h3>
+              <p>若没有互通网络，却出现了稳定的跨平台虚拟组织，这条假说就被削弱。</p>
+            </article>
+            <article>
+              <span>社会形态自相似</span>
+              <h3>看虚拟社区的实际路径</h3>
+              <p>若游戏经济、加密社区和平台治理普遍跳过等级化阶段，或走出与现实无关的治理形态，自相似就不能当定律。</p>
+            </article>
+            <article>
+              <span>虚拟吸收式倒退</span>
+              <h3>看虚拟消费对照硬科技</h3>
+              <p>若虚拟消费上升，同时硬科技进入率和物理成本下降，说明两者互补，而不是替代。</p>
+            </article>
+            <article>
+              <span>入口地租</span>
+              <h3>看抽成和独立开发者</h3>
+              <p>若应用商店、云服务和模型 API 的抽成上升，但独立建造者的进入率和收入同步上升，这个入口更接近协调型 gate。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="timeline-band" id="chapters">
+        <div class="section-inner">
+          <p class="section-kicker">章节元数据</p>
+          <h2>三十六章只保留标题、日期和原文链接。 <a class="anchor-link" href="#chapters" aria-label="复制章节链接">#</a></h2>
+          <p>
+            专辑《虚拟世界》，公众号「缠见如故」。结构化元数据在 <a href="../data/books/virtual-world/chapters.json">data/books/virtual-world/chapters.json</a>。点击标题前往原文，本站不收录全文。
+          </p>
+          <ol class="chapter-index">
+            <li><a href="https://mp.weixin.qq.com/s?__biz=Mzg3ODc0ODU4OA==&amp;mid=2247493651&amp;idx=1&amp;sn=4b2fd2cf30ac06dd4f061f009eca77ac&amp;chksm=cf0c5ed0f87bd7c6f632f486f6fbfa74911d0aef70dd31b5003d4dad89c1d203ea43a985d5c2" rel="noopener noreferrer"><time datetime="2024-08-16">2024-08-16</time><strong>01 虚拟世界系列1：序</strong></a></li>
+            <li><a href="https://mp.weixin.qq.com/s?__biz=Mzg3ODc0ODU4OA==&amp;mid=2247493738&amp;idx=1&amp;sn=6e49118324997b06dd5d6d59b16af165&amp;chksm=cf0c5ea9f87bd7bf5e37224bff4484a1a1409524af8860c336fa4a87939e6eb5a5b9998a87c6" rel="noopener noreferrer"><time datetime="2024-08-23">2024-08-23</time><strong>02 虚拟世界系列2：缠中说禅应用之方法论</strong></a></li>
+            <li><a href="https://mp.weixin.qq.com/s?__biz=Mzg3ODc0ODU4OA==&amp;mid=2247493798&amp;idx=1&amp;sn=08602353800bf75fe8d9ca455323884d&amp;chksm=cf0c5e65f87bd773d0953925eb90025b0898bf28aa3eec9571df2d6e3dd3abb4807ad0cc5b3b" rel="noopener noreferrer"><time datetime="2024-08-30">2024-08-30</time><strong>03 虚拟世界系列3：主要内容简介</strong></a></li>
+            <li><a href="https://mp.weixin.qq.com/s?__biz=Mzg3ODc0ODU4OA==&amp;mid=2247493907&amp;idx=1&amp;sn=5b3a7a4638e244fa2147a453967cb2c8&amp;chksm=cf0c5fd0f87bd6c662565041bb7f0a63807fe9fbbaa8dcbd18a90f0a66628df5e58bb5dbfaf0" rel="noopener noreferrer"><time datetime="2024-09-06">2024-09-06</time><strong>04 虚拟世界系列4：从生物人视角研究生物人</strong></a></li>
+            <li><a href="https://mp.weixin.qq.com/s?__biz=Mzg3ODc0ODU4OA==&amp;mid=2247493944&amp;idx=1&amp;sn=d596416fac65c8081f9614a8fb97f264&amp;chksm=cf0c5ffbf87bd6ed487193d43cdbc6c1ae1f5b6255a77ec10f3868a50897fbfb9b0685928687" rel="noopener noreferrer"><time datetime="2024-09-13">2024-09-13</time><strong>05 虚拟世界系列5：生物以及生物人的演化（一）</strong></a></li>
+            <li><a href="https://mp.weixin.qq.com/s?__biz=Mzg3ODc0ODU4OA==&amp;mid=2247493955&amp;idx=1&amp;sn=25d0626b031c0855c235b407fb9ced4a&amp;chksm=cf0c5f80f87bd696e2158792d99c2845b67857a5e9220feb7f89164e73e9d085f27898279a46" rel="noopener noreferrer"><time datetime="2024-09-20">2024-09-20</time><strong>06 虚拟世界系列6：生物以及生物人的演化（二）</strong></a></li>
+            <li><a href="https://mp.weixin.qq.com/s?__biz=Mzg3ODc0ODU4OA==&amp;mid=2247493980&amp;idx=1&amp;sn=d9635865adb03f5c6b4a725d5b10a24f&amp;chksm=cf0c5f9ff87bd6893aad44ae0b000ba53280047f8f7521f5ba21483932a7b1d9643974b47ae2" rel="noopener noreferrer"><time datetime="2024-09-27">2024-09-27</time><strong>07 虚拟世界系列7：生物以及生物人的演化（三）</strong></a></li>
+            <li><a href="https://mp.weixin.qq.com/s?__biz=Mzg3ODc0ODU4OA==&amp;mid=2247494111&amp;idx=1&amp;sn=5a3c69e69120dc58ffeacc1dc43fe48d&amp;chksm=cf0c5f1cf87bd60a83c9dd4545e4af88edd7adba1b17e41a2414b07bf76a61abc95242f22c59" rel="noopener noreferrer"><time datetime="2024-10-12">2024-10-12</time><strong>08 虚拟世界系列8：生物和人类进化的倍数关系</strong></a></li>
+            <li><a href="https://mp.weixin.qq.com/s?__biz=Mzg3ODc0ODU4OA==&amp;mid=2247494132&amp;idx=1&amp;sn=d5e15d4f461a73ef6ca5ff84496ca539&amp;chksm=cf0c5f37f87bd6210ad82e6321b4184527f024e0c6e5d1d80080bdbc3504db981fdc33488c8a" rel="noopener noreferrer"><time datetime="2024-10-17">2024-10-17</time><strong>09 虚拟世界系列9：生物人大脑的演化</strong></a></li>
+            <li><a href="https://mp.weixin.qq.com/s?__biz=Mzg3ODc0ODU4OA==&amp;mid=2247494142&amp;idx=1&amp;sn=658d5a1a22b67b12b769925f8ef03c2c&amp;chksm=cf0c5f3df87bd62b58bf696118e948fc55aa70285bcd2944fb99df2d4f382ca32caafae13819" rel="noopener noreferrer"><time datetime="2024-10-25">2024-10-25</time><strong>10 虚拟世界系列10：生物人走势的结束和第六次生物大灭绝的共振时刻</strong></a></li>
+            <li><a href="https://mp.weixin.qq.com/s?__biz=Mzg3ODc0ODU4OA==&amp;mid=2247494164&amp;idx=1&amp;sn=b822e6623a9780a1db096e01b1246e34&amp;chksm=cf0c5cd7f87bd5c19df084aa364bbe7514ef641419d6bc042be77c961b74029461cfd561428e" rel="noopener noreferrer"><time datetime="2024-11-01">2024-11-01</time><strong>11 虚拟世界系列11：生物人走势的分类以及虚拟人的可能</strong></a></li>
+            <li><a href="https://mp.weixin.qq.com/s?__biz=Mzg3ODc0ODU4OA==&amp;mid=2247494323&amp;idx=1&amp;sn=883c4a107377053209ba4a8d3082488c&amp;chksm=cf0c5c70f87bd566ffd56e260b17a8bf716c548ebf9abb19d98fec3ad46936e5982cff143fbd" rel="noopener noreferrer"><time datetime="2024-11-08">2024-11-08</time><strong>12 虚拟世界系列12：从分别到网络</strong></a></li>
+            <li><a href="https://mp.weixin.qq.com/s?__biz=Mzg3ODc0ODU4OA==&amp;mid=2247494369&amp;idx=1&amp;sn=3b0cd34b22ef793a4b898e6d187c7625&amp;chksm=cf0c5c22f87bd534fc6ad8c2cb7cae1c50823fa267bd920238c4a0daf9977cbccac994936c3b" rel="noopener noreferrer"><time datetime="2024-11-14">2024-11-14</time><strong>13 虚拟世界系列13：个体的生长和升级（一）</strong></a></li>
+            <li><a href="https://mp.weixin.qq.com/s?__biz=Mzg3ODc0ODU4OA==&amp;mid=2247494379&amp;idx=1&amp;sn=0433f25965ba66272d805af75c296061&amp;chksm=cf0c5c28f87bd53e22ed36f3148079e270898d8cf98398a2779b3a956dfe892ea94784551fff" rel="noopener noreferrer"><time datetime="2024-11-21">2024-11-21</time><strong>14 虚拟世界系列14：个体的生长和升级（二）</strong></a></li>
+            <li><a href="https://mp.weixin.qq.com/s?__biz=Mzg3ODc0ODU4OA==&amp;mid=2247494492&amp;idx=1&amp;sn=fd735b961360d15720e6491a18a590be&amp;chksm=cf0c5d9ff87bd489573d6f20a142769f1d834aea235933176d814a35cfd9a4891bf8ca1eabff" rel="noopener noreferrer"><time datetime="2024-12-05">2024-12-05</time><strong>15 虚拟世界系列15：网络和交换</strong></a></li>
+            <li><a href="https://mp.weixin.qq.com/s?__biz=Mzg3ODc0ODU4OA==&amp;mid=2247494508&amp;idx=1&amp;sn=7e63287f556c18e64d63d15d91567d68&amp;chksm=cf0c5daff87bd4b91114cfa0884b55eb7632d57a6d1a2beb04543f16ada78a9ace1511e2c2df" rel="noopener noreferrer"><time datetime="2024-12-12">2024-12-12</time><strong>16 虚拟世界系列16: 人类交通的变迁史</strong></a></li>
+            <li><a href="https://mp.weixin.qq.com/s?__biz=Mzg3ODc0ODU4OA==&amp;mid=2247494514&amp;idx=1&amp;sn=c7d7ec5781e80128f2829b2a15062f49&amp;chksm=cf0c5db1f87bd4a71ec4f7ee2e6a61f20cc0e2dd98bea2ba1b4d14a6b05a6ff6979dda388698" rel="noopener noreferrer"><time datetime="2024-12-19">2024-12-19</time><strong>17 虚拟世界系列17：人类社会网络</strong></a></li>
+            <li><a href="https://mp.weixin.qq.com/s?__biz=Mzg3ODc0ODU4OA==&amp;mid=2247494519&amp;idx=1&amp;sn=e93ac1029739da69c4abb1a758b78ab1&amp;chksm=cf0c5db4f87bd4a2a1c983e1f5e4f178efed4120ba434b66262af3891892373eab7b945ffabf" rel="noopener noreferrer"><time datetime="2024-12-26">2024-12-26</time><strong>18 虚拟世界系列18：生物人和现实世界之存在</strong></a></li>
+            <li><a href="https://mp.weixin.qq.com/s?__biz=Mzg3ODc0ODU4OA==&amp;mid=2247494624&amp;idx=1&amp;sn=8beae9a91bfa3a8d68318d0a624eeac5&amp;chksm=cf0c5d23f87bd4355b6463e41fa07a36b014068f6c6bbc1bdbafef88d83d8c9ad7d0e9d5dc75" rel="noopener noreferrer"><time datetime="2025-01-02">2025-01-02</time><strong>19 虚拟世界系列19：“存在”的物理学解释</strong></a></li>
+            <li><a href="https://mp.weixin.qq.com/s?__biz=Mzg3ODc0ODU4OA==&amp;mid=2247494724&amp;idx=1&amp;sn=3b78d6614f8d500b23e28ef4c942ead2&amp;chksm=cf0c5a87f87bd391993f1ef1ace0252d62a949317642fa5669e0a3c167e41e677f8f5ff6b20f" rel="noopener noreferrer"><time datetime="2025-01-10">2025-01-10</time><strong>20 虚拟世界系列20：提高获得负熵的能力</strong></a></li>
+            <li><a href="https://mp.weixin.qq.com/s?__biz=Mzg3ODc0ODU4OA==&amp;mid=2247494769&amp;idx=1&amp;sn=44cb13f50030868d13dfbad50b6df4a3&amp;chksm=cf0c5ab2f87bd3a4a7ab8885a32eb1190c55942a993671ba59fce83824efa0c2895ed8f8428b" rel="noopener noreferrer"><time datetime="2025-01-16">2025-01-16</time><strong>21 虚拟世界系列21：现实世界的科技发展趋势</strong></a></li>
+            <li><a href="https://mp.weixin.qq.com/s?__biz=Mzg3ODc0ODU4OA==&amp;mid=2247494810&amp;idx=1&amp;sn=6b920ee8edb4d7d0df90f8a3647f69f1&amp;chksm=cf0c5a59f87bd34f25ec36f95f7461a9cd84be72e15dfcfa9fb83fcc97f6d297caab7e080077" rel="noopener noreferrer"><time datetime="2025-01-23">2025-01-23</time><strong>22 虚拟世界系列22：新能源</strong></a></li>
+            <li><a href="https://mp.weixin.qq.com/s?__biz=Mzg3ODc0ODU4OA==&amp;mid=2247494918&amp;idx=1&amp;sn=0a369b390e585ae3dc39b842402559bf&amp;chksm=cf0c5bc5f87bd2d3ea06cbde115a5110bcf6fbd184b29af681623c4b64a723c376632cc18593" rel="noopener noreferrer"><time datetime="2025-02-07">2025-02-07</time><strong>23 虚拟世界系列23：前期文章总结</strong></a></li>
+            <li><a href="https://mp.weixin.qq.com/s?__biz=Mzg3ODc0ODU4OA==&amp;mid=2247494958&amp;idx=1&amp;sn=d8cd77bae71d6232c2a22a6c4f28288c&amp;chksm=cf0c5bedf87bd2fbcbfa6355c678a1abf77b8eb3b8dfdd1b8dab4b70af068fdb3be3dab72c5e" rel="noopener noreferrer"><time datetime="2025-02-13">2025-02-13</time><strong>24 虚拟世界系列24：现实世界和虚拟世界</strong></a></li>
+            <li><a href="https://mp.weixin.qq.com/s?__biz=Mzg3ODc0ODU4OA==&amp;mid=2247494971&amp;idx=1&amp;sn=400a6046e4de29f311bf894e8d7ed456&amp;chksm=cf0c5bf8f87bd2ee01904660609d76ccf14762e4cadc7cf6ac50e5ee73fc4e7d9435d72c7214" rel="noopener noreferrer"><time datetime="2025-02-20">2025-02-20</time><strong>25 虚拟世界系列25：现实世界和虚拟世界的比较</strong></a></li>
+            <li><a href="https://mp.weixin.qq.com/s?__biz=Mzg3ODc0ODU4OA==&amp;mid=2247495006&amp;idx=1&amp;sn=a4d9cb07c524816547349607feb42a33&amp;chksm=cf0c5b9df87bd28b3d9366b1c6c0faf63f701739bb8a1124e499a01751dcada5cbb470127929" rel="noopener noreferrer"><time datetime="2025-02-27">2025-02-27</time><strong>26 虚拟世界系列26：生物人和虚拟人的自相似性和不可重复性</strong></a></li>
+            <li><a href="https://mp.weixin.qq.com/s?__biz=Mzg3ODc0ODU4OA==&amp;mid=2247495079&amp;idx=1&amp;sn=a748d33aca25181981ebebe0167699b3&amp;chksm=cf0c5b64f87bd27233be20276636d996c230823bb2ab4de0771f165b14bf1bc7993d538f88f5" rel="noopener noreferrer"><time datetime="2025-03-07">2025-03-07</time><strong>27 虚拟世界系列27：虚拟世界和现实世界的自相似性和不可重复性</strong></a></li>
+            <li><a href="https://mp.weixin.qq.com/s?__biz=Mzg3ODc0ODU4OA==&amp;mid=2247495130&amp;idx=1&amp;sn=f363b8f1d914fefcd502959cbe23235a&amp;chksm=cf0c5b19f87bd20f7476e6e749cc8b00aa883727ea7636ccb7596b3ca993bf630222c5b14ddc" rel="noopener noreferrer"><time datetime="2025-03-13">2025-03-13</time><strong>28 虚拟世界系列28：虚拟人和虚拟世界</strong></a></li>
+            <li><a href="https://mp.weixin.qq.com/s?__biz=Mzg3ODc0ODU4OA==&amp;mid=2247495160&amp;idx=1&amp;sn=ce19496422c811e6f1e8e388ffe7bdde&amp;chksm=cf0c5b3bf87bd22d8286ac24344765987c91a1b6ea12ef0cb9bb4e3ab0f5d69a3c9233f0c41e" rel="noopener noreferrer"><time datetime="2025-03-20">2025-03-20</time><strong>29 虚拟世界系列29：虚拟世界之实</strong></a></li>
+            <li><a href="https://mp.weixin.qq.com/s?__biz=Mzg3ODc0ODU4OA==&amp;mid=2247495200&amp;idx=1&amp;sn=cc23790b65f14ac619af3ca3799ae0a5&amp;chksm=cf0c58e3f87bd1f5e2d4b3f7babbbe9d763805d8ea835557ec8237853b409c8762afdf35c4f0" rel="noopener noreferrer"><time datetime="2025-03-28">2025-03-28</time><strong>30 虚拟世界系列30：虚拟世界之虚</strong></a></li>
+            <li><a href="https://mp.weixin.qq.com/s?__biz=Mzg3ODc0ODU4OA==&amp;mid=2247495335&amp;idx=1&amp;sn=192a584a0a607c1dcdc44ae5b1dc2ca5&amp;chksm=cf0c5864f87bd17279d6865be6c2aaa6498ae05ec5fb86ee522fa9a046a468d4068ee4b59320" rel="noopener noreferrer"><time datetime="2025-04-11">2025-04-11</time><strong>31 虚拟世界系列31：虚拟世界和现实世界的连接和转化</strong></a></li>
+            <li><a href="https://mp.weixin.qq.com/s?__biz=Mzg3ODc0ODU4OA==&amp;mid=2247495443&amp;idx=1&amp;sn=e1204ec3091f9099e56f8bf91ab32c11&amp;chksm=cf0c59d0f87bd0c661020d2fe11c71d0c1de2c4e7131a5e2d5acee0c6cca6561abfd5f891ed0" rel="noopener noreferrer"><time datetime="2025-04-25">2025-04-25</time><strong>32 虚拟世界系列32：虚拟世界发展的逻辑必然性</strong></a></li>
+            <li><a href="https://mp.weixin.qq.com/s?__biz=Mzg3ODc0ODU4OA==&amp;mid=2247495544&amp;idx=1&amp;sn=7b5242ddc2f49d226003a7b2509298ad&amp;chksm=cf0c59bbf87bd0ad0a94627aeee4b2239df0231e196676667988b17522376f20de32deaa96c3" rel="noopener noreferrer"><time datetime="2025-05-09">2025-05-09</time><strong>33 虚拟世界系列33：虚拟人的潜在未来走势</strong></a></li>
+            <li><a href="https://mp.weixin.qq.com/s?__biz=Mzg3ODc0ODU4OA==&amp;mid=2247495602&amp;idx=1&amp;sn=8c7d30a3d0f22ee2e04daca82dd0ffd5&amp;chksm=cf0c5971f87bd067969ff44a5742bbaf32e992d57da87df775a3721104d1fd2e1ae4c4f4f3dc" rel="noopener noreferrer"><time datetime="2025-05-18">2025-05-18</time><strong>34 虚拟世界系列34：虚拟世界推论</strong></a></li>
+            <li><a href="https://mp.weixin.qq.com/s?__biz=Mzg3ODc0ODU4OA==&amp;mid=2247495651&amp;idx=1&amp;sn=fc1e63194d1189f1fb147d21864fa3dd&amp;chksm=cf0c5920f87bd0367508ae90853ed319f2655f1df268c13e0cc88da8d5dea5261049a321719d" rel="noopener noreferrer"><time datetime="2025-05-24">2025-05-24</time><strong>35 虚拟世界系列35：虚拟世界的发展历程预测和问题</strong></a></li>
+            <li><a href="https://mp.weixin.qq.com/s?__biz=Mzg3ODc0ODU4OA==&amp;mid=2247497118&amp;idx=1&amp;sn=00fe587651d7ece9ebf9ce6f8ad5d670&amp;chksm=cf0c435df87bca4b6e36511580f641ce3d89dee49c408e5f37ddc9acfb5269a2909aeff064f6" rel="noopener noreferrer"><time datetime="2025-11-28">2025-11-28</time><strong>36 虚拟世界系列36：生物人的担当【代终篇】</strong></a></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="formula-band" id="nodes">
+        <div class="section-inner">
+          <p class="section-kicker">Agent Core 节点草案</p>
+          <h2>六个可登记的节点，对应路线图的概念层。 <a class="anchor-link" href="#nodes" aria-label="复制节点草案链接">#</a></h2>
+          <p class="formula">
+            vw-energy-ceiling · vw-network-before-org · vw-copy-cost-collapse · vw-six-entries · vw-virtual-absorption-regression · vw-reject-numerology
+          </p>
+          <p>
+            能源账本、网络先于组织、复制成本塌缩、六入口、虚拟吸收式倒退，以及拒绝走势命理。推导链里一旦出现中枢、离开段、5 倍或共振，就应当报警。
+          </p>
+          <div class="actions">
+            <a class="button primary" href="../docs/branches/virtual-world.md">打开分支源文档</a>
+            <a class="button" href="../docs/branches/virtual-world-summary.md">打开全书总结</a>
+            <a class="button" href="../docs/framework.md">打开文明框架</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

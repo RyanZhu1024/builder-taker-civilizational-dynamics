@@ -20,6 +20,7 @@ growth loop = 把经验吸收回思想星图
 - [ ] 设计 `agent-core/` 目录结构。
 - [ ] 提取 `kernel.md`：中心思想、边界、价值原则、禁止漂移方向。
 - [ ] 提取 `concepts/*.md`：每个思想节点一个独立 concept 文件。
+  - 虚拟世界分支（`docs/branches/virtual-world.md` 第7节）先登记六个节点：`vw-energy-ceiling`、`vw-network-before-org`、`vw-copy-cost-collapse`、`vw-six-entries`、`vw-virtual-absorption-regression`、`vw-reject-numerology`。
 - [ ] 提取 `links.json`：节点之间的逻辑边、依赖、冲突和推演关系。
 - [ ] 提取 `operating-principles.md`：如何用这套思想回答人生、职业、代码、架构、文明问题。
 - [ ] 提取 `evaluation-gates.md`：逻辑 gate、现实 gate、伦理 gate、可审计 gate。
